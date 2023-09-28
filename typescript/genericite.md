@@ -1,5 +1,7 @@
 # La généricité
-La généricité permet de définir des interfaces, des classes ou des fonctions en paramétrant certains types utilisés dans leurs définitions. Un exemple classique est [la structure de pile](https://fr.wikipedia.org/wiki/Pile_(informatique)) qui peut être définie indépendamment du type d'éléments empilés. En Typescript, la syntaxe utilisée est proche de celle des generics en Java. Dans l'exemple ci-dessous, l'interface Pile est générique, c'est-à-dire qu'elle est paramétrée (ici, par le type **T**). 
+
+La généricité permet de définir des interfaces, des classes ou des fonctions en paramétrant certains types utilisés dans leurs définitions. Un exemple classique est [la structure de pile](https://fr.wikipedia.org/wiki/Pile_(informatique)) qui peut être définie indépendamment du type d'éléments empilés. En Typescript, la syntaxe utilisée est proche de celle des generics en Java. Dans l'exemple ci-dessous, l'interface Pile est générique, c'est-à-dire qu'elle est paramétrée (ici, par le type **T**).
+
 ```typescript
 interface Pile<T> {
   empiler(e: T): void;
@@ -64,5 +66,5 @@ const pt3 = getUpdatedPoint(ptM, {y: 7});
 ```
 
 <div style="border: solid blue 2px; border-radius: 1em; padding: .5em;">
-<h3 style="display: inline">Note : </h3>Le but de ce cours n'est pas d'apprendre à utiliser la généricité en profondeur mais d'être familier avec le concept car vous le rencontrerez régulièrement en Typescript. Pour une description plus complète de la généricité en Typescript, vous pouvez vous référer à <a href="https://www.typescriptlang.org/docs/handbook/generics.html">la documentation officielle</a>.
+  <h3 style="display: inline">Note : </h3>Le but de ce cours n'est pas d'apprendre à utiliser la généricité en profondeur mais d'être familier avec le concept car vous le rencontrerez régulièrement en Typescript. Pour une description plus complète de la généricité en Typescript, vous pouvez vous référer à <a href="https://www.typescriptlang.org/docs/handbook/generics.html">la documentation officielle</a>.
 </div>

@@ -1,4 +1,5 @@
 # Exercice : Objets et généricité
+
 Soit la déclaration suivante, tirée de Typescript, qui définit un tableau associatif :
 
 ```typescript

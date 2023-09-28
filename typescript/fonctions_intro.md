@@ -1,4 +1,5 @@
 # Les fonctions et leurs types
+
 En Typescript, comme en Javascript, les fonctions sont des éléments de premier plan qui seront utilisés intensivement dans nos programmes. Nous vous invitons à lire [la documentation officielle](https://www.typescriptlang.org/docs/handbook/2/functions.html) à propos des fonctions.
 
 Typescript permet, optionnellement, de déclarer explicitement le type des paramètres, ainsi que le type de la valeur de retour d'une fonction. Par exemple, une fonction qui prend en paramètre deux nombres et qui retourne leur somme peut s'écrire ainsi :
@@ -30,7 +31,8 @@ f1 === add;
 f1(2, 3) === add(2, 3)
 ```
 
-Notez que la notation pour décrire le type d'une fonction est proche de la notation fléchée utilisée pour les définir. Attention, cependant, dans le premier cas, on décrit le **TYPE** de la fonction ; dans le second cas, on décrit la **VALEUR** de la fonction (ses paramètres, son corps, sa valeur de retour). Par exemple, je peux définir **f2** comme une fonction de type **T_NN_N** dont la valeur est décrite par la fonction anonyme définie en notation fléchée par la valeur 
+Notez que la notation pour décrire le type d'une fonction est proche de la notation fléchée utilisée pour les définir. Attention, cependant, dans le premier cas, on décrit le **TYPE** de la fonction ; dans le second cas, on décrit la **VALEUR** de la fonction (ses paramètres, son corps, sa valeur de retour). Par exemple, je peux définir **f2** comme une fonction de type **T_NN_N** dont la valeur est décrite par la fonction anonyme définie en notation fléchée par la valeur:
+
 ```typescript
 (x: number, y: number) => x - y. 
 ```
@@ -42,7 +44,7 @@ const f2: T_NN_N = (x: number, y: number) => x - y;
 const f3: T_NN_N = (a, b) => a * b;
 ```
 
-### Note : Différence entre type et signature.
+## Note : Différence entre type et signature.
 
 Le type d'une fonction est composée de la liste de ses arguments et de leur type, ainsi que du type de sa valeur de retour. 
 La signature d'une fonction est composée de son type et de son nom.

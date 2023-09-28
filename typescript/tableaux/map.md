@@ -6,7 +6,7 @@ const tab1: number[] = [3, 7, 2, 1];
 const tab2: number[] = tab1.map( x => 2*x );
 ```
 
-<img src="./assets/typescript/tableaux/Animation_methode_map_II.6.gif" style="max-width: 100%;" /> 
+<img src="assets/typescript/tableaux/Animation_methode_map_II.6.gif" style="max-width: 100%;" /> 
 
 Intéressons-nous, maintenant, aux types des méthodes et fonctions mises en jeu dans cet exemple. La méthode **map** prend ici en paramètres une fonction f et renvoie un tableau de nombres. La fonction f prend en paramètres un nombre et renvoie un nombre. Le fait que map prenne en paramètres une fonction, fait de **map** une **fonction d'ordre supérieur**.
 
