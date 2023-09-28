@@ -1,4 +1,5 @@
-La méthode map
+# La méthode map
+
 Commençons avec la méthode map. Celle-ci permet de générer un nouveau tableau tab2 de même dimension à partir d'un tableau tab1. Les valeurs du nouveau tableau sont calculées en fonction des valeurs du premier à l'aide d'une fonction passé en paramètres. Supposons l'exemple suivant, tab1 est un tableau de nombre et tab2 le résultat de tab1 par une fonction qui va multiplier par 2 la valeur de chaque case.
 
 ```typescript
@@ -40,6 +41,7 @@ interface Array<T> {
 ```
 
 Explications :
+
 * L'interface définit le type des objets tableau (Array), qui est lui-même défini comme un type générique (un tableau contenant des éléments de type T, T pouvant être number, string, etc.).
 * La méthode map est définie pour les tableaux, elle nécessite l'utilisation d'un second type générique U puisqu'elle va produire un tableau de U à partir du tableau de T.
 * La méthode map prend en paramètres une fonction f. Cette fonction f prend en paramètres un élément de type T (les éléments dans les cases du tableau) et l'index de cet élément. Elle renvoie comme valeur de retour un U.
