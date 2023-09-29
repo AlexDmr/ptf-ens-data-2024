@@ -38,5 +38,5 @@ Reduce est une fonction très généraliste. On peut tout faire avec. Par exempl
 La fonction reduce va ici être utilisée pour trouver le mot de longueur minimum dans un tableau. L'accumulateur contient le mot de longueur minimum courant. On ne fournit pas de valeur initiale explicitement, celle ci est donc la valeur de la première case du tableau et on commence l'itération à partir de la seconde case, d'indice 1.
 
 <iframe src   = "https://theme-ihm-reduce.web.app/reduce?f=return%20acc.length%20<%20v.length%20%3F%20acc%20:%20v;&t=%5B%22coucou%22%2C+%22oui%22%2C+%22quoi%3F%22%2C+%22h%C3%A9%22%2C+%22comment+%C3%A7a+%3F%22%2C+%22arf%22%5D"
-        style = "width: 100%; height: 300px;" 
+        style = "width: 100%; height: 300px;"
         ></iframe>
