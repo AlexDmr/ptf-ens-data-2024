@@ -18,5 +18,5 @@ La programmation réactive, qui généralise le patron de conception observateur
 
 Dans ce cours, nous allons nous intéresser à la mise en oeuvre de la programmation réactive à l'aide de deux frameworks utilisés dans Angular :
 
-* Les signaux : C'est le mécanisme actuellement recommandé pour la mise en oeuvre de la programmation réactive dans Angular.
-* Les observables RxJS : Ce mécanisme est plus riche que celui offert par les signaux (en particulier il gère finement les aspects temporels qui sont absent des signaux). Il est cependant plus complexe à mettre en oeuvre.
+1. Les signaux : C'est le mécanisme actuellement recommandé pour la mise en oeuvre de la programmation réactive dans Angular.
+2. Les observables RxJS : Ce mécanisme est plus riche que celui offert par les signaux (en particulier il gère finement les aspects temporels qui sont absent des signaux). Il est cependant plus complexe à mettre en oeuvre.
