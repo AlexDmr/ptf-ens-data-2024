@@ -22,7 +22,7 @@ Si on indexe dans un tableau les valeurs successives de `a`, `b` et `c`, on obti
 
 La programmation réactive se base sur le fait que des variables dépendent d'autres variables. Dans l'exemple précédent, la variable `c` dépend des variables `a` et `b`. On peut donc dire que `c` est une fonction de `a` et `b`.
 
-On peut représenter les dépendances entre variables par un graphe orienté. Chaque variable est représentée par un nœud et une flèche part de chaque variable vers les variables dont elle dépend.
+On peut représenter les dépendances entre variables par un graphe orienté. Chaque variable est représentée par un nœud et une flèche part de chaque variable vers les variables qui en sont dépendantes.
 
 <div style="text-align:center">
     <img src="assets/progReactive/dependances.abc.png" alt="Graphe de dépendances entre les variables a, b et c" style="max-width: min(100%, 300px);" />
