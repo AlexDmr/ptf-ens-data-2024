@@ -26,7 +26,7 @@ On peut représenter les dépendances entre variables par un graphe orienté. Ch
 
 <!-- Tiré de https://csacademy.com/app/graph_editor/ -->
 <div style="text-align:center">
-    <img src="progReactive/dependances.abc.png" alt="Graphe de dépendances entre les variables a, b et c" style="max-width: 324px;" />
+    <img src="assets/progReactive/dependances.abc.png" alt="Graphe de dépendances entre les variables a, b et c" style="max-width: 324px;" />
 </div>
 
 ## Dépendances plus complexes
@@ -40,7 +40,7 @@ Le système de dépendances peut être plus complexe. Par exemple :
 
 <!-- Tiré de https://csacademy.com/app/graph_editor/ -->
 <div style="text-align:center">
-    <img src="progReactive/dependances.abcd.png" alt="Graphe de dépendances entre les variables a, b, c et d" style="max-width: 324px;" />
+    <img src="assets/progReactive/dependances.abcd.png" alt="Graphe de dépendances entre les variables a, b, c et d" style="max-width: 324px;" />
 </div>
 
 ## Nécessité d'éviter les cycles
