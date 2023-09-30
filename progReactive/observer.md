@@ -1,5 +1,7 @@
 # Le patron de conception Observateur/Observable
 
+LE patron de conception observateur/observable permet de mettre en oeuvre des systèmes réactifs simples. Il est très utilisé dans les systèmes interactifs (mais pas seulement) et vous apprendrez à le reconnaitre dans de très nombruex systèmes exisants.
+
 On appelle « patron de conception » une solution bien établie à un problème récurrent. Un problème est dit « récurent » si on le rencontre régulièrement en pratique. Une solution est dite « bien établie » si les praticiens reconnaissent qu'elle est utile pour résoudre le problème et s'ils l'utilisent. Le patron de conception Observateur/Observable est donc une solution bien établie à un problème récurrent, nous allons donc décrire à quel problème il s'adresse et quelle solution il propose.
 
 Problème : On a un fragment de code qui doit prévenir d'autres fragments de codes que quelque chose s'est produit. Ces fragments de codes peuvent être des objets, des modules, des composants, etc. Le problème se pose, de manière générale, indépendamment de la structure de ces fragments. 

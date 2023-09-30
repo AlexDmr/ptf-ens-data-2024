@@ -21,3 +21,28 @@ Si on indexe dans un tableau les valeurs successives de `a`, `b` et `c`, on obti
 ## Dépendances
 
 La programmation réactive se base sur le fait que des variables dépendent d'autres variables. Dans l'exemple précédent, la variable `c` dépend des variables `a` et `b`. On peut donc dire que `c` est une fonction de `a` et `b`.
+
+On peut représenter les dépendances entre variables par un graphe orienté. Chaque variable est représentée par un nœud et une flèche part de chaque variable vers les variables dont elle dépend.
+
+<!-- Tiré de https://csacademy.com/app/graph_editor/ -->
+<div style="text-align:center">
+    <img src="progReactive/dependances.abc.png" alt="Graphe de dépendances entre les variables a, b et c" style="max-width: 324px;" />
+</div>
+
+## Dépendances plus complexes
+
+Le système de dépendances peut être plus complexe. Par exemple :
+
+* `a = 3`
+* `b = a + 2`
+* `c = a + b`
+* `d = b + c - 2a`
+
+<!-- Tiré de https://csacademy.com/app/graph_editor/ -->
+<div style="text-align:center">
+    <img src="progReactive/dependances.abcd.png" alt="Graphe de dépendances entre les variables a, b, c et d" style="max-width: 324px;" />
+</div>
+
+## Nécessité d'éviter les cycles
+
+Comme vous vous en doutez déjà, lle graphe de dépendance ne doit contenir aucun cycle. En effet, la présence d'un cycle impliquerait l'impossibilité de calculer les valeurs des variables.
