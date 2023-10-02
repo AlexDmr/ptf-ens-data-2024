@@ -1,4 +1,4 @@
-import { EXO } from "src/app/data/EXO"
+import { EXO } from "src/app/data/EXO";
 
 export const exo_map: EXO = {
     "title": "Exercice : Prise en main d'Angular",

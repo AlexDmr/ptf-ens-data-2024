@@ -10,6 +10,27 @@ Cette directive conditionne l'affichage d'une balise à une expression booléenn
 <div  *ngIf = "EXPRESSION BOOLÉENNE" >
 ```
 
+La syntaxe du `*ngIf` permet aussi de référencer le résultat de l'expression `E` dans une variable locale `V` avec une syntaxe du type `*ngIf="E as V"`.
+Cela est utile si l'expression renvoie autre chose qu'un booléen (par exemple un objet ou un tableau) et que l'on souhaite utiliser ce résultat dans le fragment HTML. Par exemple, en supposant que `sigL` est un signal produisant des `undefined | number[]`, on peut afficher le fragment si et seulement si le signal produit un tableau de nombres :
+
+```html
+<div *ngIf = "sigL() as L">
+  Voici la liste : {{L | json}}
+</div>
+```
+
+Enfin, il est possible de mentionner un `else`. Dans ce cas, si l'expression est évaluée à faux, le fragment HTML mentionné après le `else` est injecté dans le DOM. Ce fragment **DOIT** référencer une balise `ng-template`. Notez dans l'exemple ci dessous que la balise `ng-template` contient un attribut `#pasDeListe` qui permet à Angular de l'identifier. Cet attribut est utilisé dans le `else` pour référencer le fragment HTML à injecter dans le DOM si l'expression est évaluable à false (ici si le signal `sigL` produit `undefined`).
+
+```html
+<div *ngIf = "sigL() as L; else pasDeListe">
+  Voici la liste : {{L | json}}
+</div>
+
+<ng-template #pasDeListe>
+  <label>Il n'y a pas de liste à afficher...</label>
+</ng-template>
+```
+
 ## \*ngSwitch
 
 Cette directive injecte dans le DOM un élément parmi plusieurs possibles selon la valeur d'une expression. Comme son nom l'indique, son comportement est similaire à celui d'une instruction switch des langages de programmation. Cette directive n'est pas en elle-même une directive structurelle mais elle est accompagnée de deux directives qui le sont : ***\*ngSwitchCase*** et ***\*ngSwitchDefault***. Ces trois directives sont utilisées de concert. Dans l'exemple suivant, on suppose que dataType est un **Signal\<string\>** qui indique un format de données. Selon ce type, une balise est utilisée si le type vaut `'date'` ; une autre l'est, si le type vaut `'json'` ; et enfin si le type est autre, on utilise la troisième balise (***\*ngSwitchDefault***) :
