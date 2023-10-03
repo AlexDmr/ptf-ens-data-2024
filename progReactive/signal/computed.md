@@ -26,7 +26,7 @@ console.log( p() ); // { name: "Alice", age: 24 }
 
 ## Dépendance d'un signal dérivé
 
-Dans l'exemple précédent, on a le graphe de dépendance suivant (chaque flèche x -> y représente le fait que le signal y est dépendant du signal x, c'est à dire qu'une mise à jour de la valeur de x aura un impact sur la valeur de y) :
+Dans l'exemple précédent, on a le graphe de dépendance suivant (rappel : chaque flèche x -> y représente le fait que le signal y est dépendant du signal x, c'est à dire qu'une mise à jour de la valeur de x aura un impact sur la valeur de y) :
 
 <div style="text-align:center">
     <img src="assets/progReactive/signal/dependances.person.svg" alt="Graphe de dépendances entre les signaux n, a et p" style="max-width: min(100%, 300px);" />
