@@ -1,7 +1,7 @@
 # Définition d'un signal dérivé (ou signal calculé)
 
 La grande force des signaux est de pouvoir définir des signaux dérivés (qu'on indifféremment appeler signaux calculés).
-Un signal dérivé est un signal dont la valeur est calculée à partir d'un ou plusieurs autres signaux (ces signaux pouvant être eux-mêmes des signaux dérivés ou bien des signaux primitifs).
+Un signal dérivé est un signal dont la valeur est calculée à partir d'un ou plusieurs autres signaux (ces signaux pouvant être eux-mêmes des signaux dérivés ou bien des signaux primaires).
 
 Cela signifie qu'à chaque fois qu'un des signaux dont dépend un signal dérivé change de valeur, le signal dérivé est mis à jour. On dispose donc avec les signaux d'une base vraiment complète pour aborder la programmation réactive.
 

@@ -1,10 +1,10 @@
-# Définition d'un signal primitif
+# Définition d'un signal primaire
 
 Un signal est une interface générique. Un signal produit des valeurs de type `T`.
-On distingue les signaux primitifs des signaux dérivés. Nous commençons par étudier les signaux primitifs.
+On distingue les signaux primaires des signaux dérivés. Nous commençons par étudier les signaux primaires.
 
-On peut définir un signal primitif comme étant un signal qui ne dépend d'aucun autre.
-La bibliothèque de [signaux fournie par Angular](https://angular.io/guide/signals) permet de créer de tels signaux à l'aide de la fonction `signal<T>(v: T)`, qui renvoie un `WritableSignal<T>` (que nous appelons dans ce cours un signal primitif), par exemple :
+On peut définir un signal primaire comme étant un signal qui ne dépend d'aucun autre.
+La bibliothèque de [signaux fournie par Angular](https://angular.io/guide/signals) permet de créer de tels signaux à l'aide de la fonction `signal<T>(v: T)`, qui renvoie un `WritableSignal<T>` (que nous appelons dans ce cours un signal primaire), par exemple :
 
 ```typescript
 const sigNum    = signal<number>( 42 );
@@ -27,11 +27,11 @@ const str    : string = sigString();
 const person : Person = sigPerson();
 ```
 
-Une fois qu'on dispose d'un signal primitif, il est possible d'en changer la valeur de plusieurs façons : en la fixant par une nouvelle valeur, en mettant à jour la valeur ou en la mutant.
+Une fois qu'on dispose d'un signal primaire, il est possible d'en changer la valeur de plusieurs façons : en la fixant par une nouvelle valeur, en mettant à jour la valeur ou en la mutant.
 
 ## Fixer la valeur
 
-Les signaux primitifs offre la méthode `set(v: T)` pour fixer la valeur du signal. Par exemple :
+Les signaux primaires offre la méthode `set(v: T)` pour fixer la valeur du signal. Par exemple :
 
 ```typescript
 sigNum   .set( 12 );
@@ -41,7 +41,7 @@ sigPerson.set( { name: "Bob", age: 24 } );
 
 ## Mettre à jour la valeur
 
-Les signaux primitifs offre la méthode `update(f: (v: T) => T)` pour mettre à jour la valeur du signal par rapport à l'ancienne. Par exemple :
+Les signaux primaires offre la méthode `update(f: (v: T) => T)` pour mettre à jour la valeur du signal par rapport à l'ancienne. Par exemple :
 
 ```typescript
 sigNum   .update( v => v + 1 );
@@ -73,7 +73,7 @@ sigN3.update( inc );
 
 ## Mutations de la valeur
 
-Pour des raisons de performance principalement, il peut arriver qu'on veuille muter une valeur, c'est à dire conserver la référence à l'objet mais modifier l'objet lui même (contraitrement à la mise à jour qui renvoie une nouvelle valeur, un nouvel objet). Pour cela, les signaux primitifs offrent la méthode `mutate(f: (v: T) => void)`.
+Pour des raisons de performance principalement, il peut arriver qu'on veuille muter une valeur, c'est à dire conserver la référence à l'objet mais modifier l'objet lui même (contraitrement à la mise à jour qui renvoie une nouvelle valeur, un nouvel objet). Pour cela, les signaux primaires offrent la méthode `mutate(f: (v: T) => void)`.
 
 ```typescript
 sigPerson.mutate( p => v.age++ );
