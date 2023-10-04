@@ -19,3 +19,7 @@ Cette section sera mise à jour au fur et à mesure du cours, n'hésitez pas à 
   * [Documentation officielle](https://angular.io/docs)
   * [Angular Material](https://material.angular.io/)
   * [Les signaux Angular](https://angular.io/guide/signals)
+
+<!-- Liens :
+éditeur de graphe : https://edotor.net/
+-->
