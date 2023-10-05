@@ -1,8 +1,8 @@
 import { EXO } from "src/app/data/EXO"
 
 export const exo_abonnement: EXO = {
-    "title": "Exercice : Abonnement et désabonnement",
+    "title": "QCM : Architecture pour les systèmes interactifs",
     "type": "qcm",
-    "statementURL": "progEvent/AboDesabo/sujet.md",
-    "qcmURL": "progEvent/AboDesabo/qcm.ts"
+    "statementURL": "archi/qcmArchi/sujet.md",
+    "qcmURL": "archi/qcmArchi//qcm.ts"
 }

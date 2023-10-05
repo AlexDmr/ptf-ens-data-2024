@@ -23,3 +23,5 @@ Les composants Angular respectent l'architecture MVVM mais les nommages ne sont 
          style = "max-width: min(100%, 797px);"
          />
 </div>
+
+Les composants Angular sont instanciés lorsqu'une balise les décrivant apparait dans une vue. Lors de l'instanciation, Angular instancie la classe VueModèle et le fragment HTML décrivant la vue. Il lie ensuite les deux parties en utilisant le mécanisme de data-binding.

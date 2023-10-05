@@ -10,7 +10,7 @@ La *vue* définie la structure HTML (fichier HTML) ainsi que la mise en page (fi
 * ***la vue-modèle*** : c'est la partie va contenir les données et les méthodes qui vont être utilisées dans la vue.
 
 <figure style="text-align: center">
-    <img    src="assets/CLIHM/static/schema_VI.3.1_Plan_de_travail_1.png"
+    <img    src="assets/archi/schema_VI.3.1_Plan_de_travail_1.png"
             style="max-width: min(100%, 640px);"
             />
     <figcaption>
@@ -38,7 +38,7 @@ Cette vue définie une div qui contient deux spans. Le premier affiche la valeur
 
 ## La vue-modèle
 
-La vue-modèle est définie par une classe. C'est dans cette classe qu'on va définir les données et les méthodes qui seront utilisées par la vue. Dans l'exemple ci-dessous, on définit une classe ***AppComponent*** qui contient un attribut ***temp*** de type ***Signal&lt;number&gt;*** et une méthode ***updateTemp*** qui met à jour le signal ***temp***. 
+La vue-modèle est définie par une classe. C'est dans cette classe qu'on va définir les données et les méthodes qui seront utilisées par la vue. Dans l'exemple ci-dessous, on définit une classe ***AppComponent*** qui contient un attribut ***temp*** de type ***Signal&lt;number&gt;*** et une méthode ***updateTemp*** qui met à jour le signal ***temp***.
 
 ```typescript
 import { Component, signal } from '@angular/core';
