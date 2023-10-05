@@ -14,7 +14,7 @@ De plus, vous serez amené à faire des exercices sur StackBlitz et il vous faud
 Vous avez accès aux services Office 365 (Word, Powerpoint, OneNote, etc.) via un compte dérivé de votre compte étudiant :
 
 * [Lien de téléchargement](https://services-numeriques-etudiants.univ-grenoble-alpes.fr/menu-principal/applications/microsoft-office-365/microsoft-office-365-723968.kjsp)
-* Votre compte pour accéder aux services en ligne est de la forme : LoginAgalan@azure.univ-grenoble-alpes.fr ou loginAgalan@azure.etu.univ-grenoble-alpes.fr
+* Votre compte pour accéder aux services en ligne est de la forme : `LoginAgalan@azure.univ-grenoble-alpes.fr` ou `loginAgalan@azure.etu.univ-grenoble-alpes.fr`
 
 Nous utiliserons parfois des pages OneNote pour ce cours, qui seront accessibles via ces comptes, il est donc indispensable de bien les créer.
 
