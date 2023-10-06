@@ -64,3 +64,31 @@ Il est possible d'avoir accès à l'indice courant à l'aide de la variable inde
   </li>
 </ul>
 ```
+
+### \*ngFor : tracking des fragments HTML
+
+À chaque fois que l'itérable géré dans le `*ngFor` produit une nouvelle valeur, Angular va remettre à jour la liste des fragments HTML associés à chaque élément de l'itérable.
+Angular essai d'être *"malin"* et regarde, pour chaque élément de la nouvelle liste, si il a déjà étté associé à un fragment dans l'ancienne liste, si c'est le cas il réutilise ce fragent (qui est donc déjà bien configuré).
+
+Par défaut, Angular utilise l'opérateur d'égalité `==` pour comparer les éléments de la nouvelle et de l'ancienne liste. Il arrive parfois que ça ne soit pas la meilleur façon de faire, par exemple si on a une liste d'objets immuables, chacun avec un identifiant. On aimerait alors que si un objet change et qu'une nouvelle version de cet objet est présente dans la liste (une nouvelle référence mais le même identifiant), Angular réutilise le fragment HTML associé à l'ancienne version de l'objet (car il sera partiellement bien configuré, la mise à jour ne concernant que les parties de l'objet qui ont changé). Sans être malin, alors Angular créera un nouveau fragment qu'il faudra entièrement reconfigurer.
+
+Cela peut aussi importer dans le cas où le fragment en question a un état d'interaction (par exemple il contient un champs texte qui a le focus clavier) : Si on ne fait pas attention, Angular va créer un nouveau fragment et le focus clavier sera perdu.
+
+Angular nous propose heureusement de pouvoir configurer la fonction de tracking des objets de la boucle (mot-clef `trackBy`). Cette fonction extrait une valeur (par exemple la valeur de l'atribut id de l'objet) à partir de l'objet et de son indice dans l'itérable. C'est cette valeur qui est ensuite comparée pour savoir si un fragment HTML peut être réutilisé ou non.
+
+Par exemple, si on a une liste d'objets de type `Personne` avec un attribut `id` de type `number`, on peut utiliser la fonction suivante pour comparer les objets :
+
+```typescript
+// Dans la vue-modèle, on définit la méthode suivante :
+trackByIdx(i: number, p: Personne): number { return p.id }
+```
+
+et dans le HTML de la vue on utilisera :
+
+```html
+<ul>
+  <li *ngFor = "let p of personnes(); trackBy: trackByIdx">
+    <label>{{p.nom}}</label> ({{p.age}} ans)
+  </li>
+</ul>
+```
