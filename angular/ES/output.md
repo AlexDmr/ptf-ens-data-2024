@@ -42,3 +42,4 @@ qui n'est qu'une abréviation pour :
 ```
 
 Les plus attentifs auront déjà compris que `colorB` doit ici être un attribut de type `string` ou un attribut calculé de type `string` s'appuyant sur un `signal<string>`.
+Enfin, notons qu'il est tout a fait possible de définir un `@Output` sans `@Input` associé. Cela permet de définir un événement qui ne dépend pas d'une donnée particulière. C'est le cas par exemple pour l'événement `click` des boutons HTML.
