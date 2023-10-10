@@ -1,6 +1,6 @@
 # Représentation de processus asynchrones
 
-Reprenons l'exemple précédent et modifions le un peu, voici un psuedo-code qui représente le programme :
+Reprenons l'exemple précédent et modifions le un peu, voici un psuedo-code qui représente le programme **`exemple`** :
 
 ```typescript
 A; 
@@ -11,7 +11,7 @@ C;
 
 avec **`D`** une instruction qui affiche un message "fin" dans le terminal (synchrone).
 
-Voici le déroulement du programme :
+Voici le déroulement du programme **`exemple`** :
 
 * 1 Dans le terminal, le message "début" s'affiche.
 * 2 Le système note qu'il faut exécuter **`B`**.
@@ -26,3 +26,9 @@ Voici le déroulement du programme :
 
 * 6 La musique se termine. Le système réagit et exécute l'instruction `Quand B termine alors exécuter D`
 * 7 Le système exécute **`D`**.
+
+Le schéma suivant résume graphiquement ce qui se passe :
+
+<div style="text-align: center">
+  <img src="assets/processus/processus.exemple.svg" alt="Représentation de l'exemple" style="width: min(100%, 150px);"/>
+</div>

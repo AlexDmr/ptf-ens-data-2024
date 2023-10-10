@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="129pt" height="612pt" viewBox="0.00 0.00 129.00 612.40">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 608.4)">
+<title>%0</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-608.4 125,-608.4 125,4 -4,4"/>
+<g id="clust1" class="cluster">
+<title>cluster_exemple</title>
+<polygon fill="none" stroke="#000000" points="21,-296.4 21,-596.4 91,-596.4 91,-296.4 21,-296.4"/>
+<text text-anchor="middle" x="56" y="-579.8" font-family="Times,serif" font-size="14.00" fill="#000000">exemple</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_B</title>
+<polygon fill="none" stroke="#000000" points="40,-244 40,-288.4 82,-288.4 82,-244 40,-244"/>
+<text text-anchor="middle" x="61" y="-271.8" font-family="Times,serif" font-size="14.00" fill="#000000">B</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_Btermine</title>
+<polygon fill="none" stroke="#000000" points="8,-8 8,-236 113,-236 113,-8 8,-8"/>
+<text text-anchor="middle" x="60.5" y="-219.4" font-family="Times,serif" font-size="14.00" fill="#000000">QuandBtermine</text>
+</g>
+<!-- start_exemple -->
+<g id="node1" class="node">
+<title>start_exemple</title>
+<ellipse fill="#000000" stroke="#000000" cx="56" cy="-561.8" rx="1.8" ry="1.8"/>
+</g>
+<!-- A____exemple -->
+<g id="node3" class="node">
+<title>A____exemple</title>
+<ellipse fill="none" stroke="#000000" cx="56" cy="-506" rx="27" ry="18"/>
+<text text-anchor="middle" x="56" y="-501.8" font-family="Times,serif" font-size="14.00" fill="#000000">A</text>
+</g>
+<!-- start_exemple&#45;&gt;A____exemple -->
+<g id="edge1" class="edge">
+<title>start_exemple-&gt;A____exemple</title>
+<path fill="none" stroke="#000000" d="M56,-559.9434C56,-555.7589 56,-545.1154 56,-534.3776"/>
+<polygon fill="#000000" stroke="#000000" points="59.5001,-534.2613 56,-524.2614 52.5001,-534.2614 59.5001,-534.2613"/>
+</g>
+<!-- end_exemple -->
+<g id="node2" class="node">
+<title>end_exemple</title>
+<ellipse fill="#000000" stroke="#000000" cx="65" cy="-306.2" rx="1.8" ry="1.8"/>
+</g>
+<!-- start_B -->
+<!-- end_exemple&#45;&gt;start_B -->
+<!-- B__start__exemple -->
+<g id="node4" class="node">
+<title>B__start__exemple</title>
+<polygon fill="none" stroke="#000000" points="83,-439.5623 56,-452 29,-439.5623 29.0252,-419.4377 82.9748,-419.4377 83,-439.5623"/>
+<text text-anchor="middle" x="56" y="-429.8" font-family="Times,serif" font-size="14.00" fill="#000000">B</text>
+</g>
+<!-- A____exemple&#45;&gt;B__start__exemple -->
+<g id="edge2" class="edge">
+<title>A____exemple-&gt;B__start__exemple</title>
+<path fill="none" stroke="#000000" d="M56,-487.8314C56,-480.131 56,-470.9743 56,-462.4166"/>
+<polygon fill="#000000" stroke="#000000" points="59.5001,-462.4132 56,-452.4133 52.5001,-462.4133 59.5001,-462.4132"/>
+</g>
+<!-- C____exemple -->
+<g id="node5" class="node">
+<title>C____exemple</title>
+<ellipse fill="none" stroke="#000000" cx="56" cy="-362" rx="27" ry="18"/>
+<text text-anchor="middle" x="56" y="-357.8" font-family="Times,serif" font-size="14.00" fill="#000000">C</text>
+</g>
+<!-- B__start__exemple&#45;&gt;C____exemple -->
+<g id="edge3" class="edge">
+<title>B__start__exemple-&gt;C____exemple</title>
+<path fill="none" stroke="#000000" d="M56,-419.4297C56,-411.1011 56,-400.3665 56,-390.436"/>
+<polygon fill="#000000" stroke="#000000" points="59.5001,-390.1279 56,-380.128 52.5001,-390.128 59.5001,-390.1279"/>
+</g>
+<!-- B__start__exemple&#45;&gt;start_B -->
+<g id="edge11" class="edge">
+<title>B__start__exemple-&gt;start_B</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M69.3876,-419.1955C77.6768,-408.9897 87.5595,-394.6661 92,-380 104.5252,-338.6321 86.3986,-287.1292 77.0232,-264.8828"/>
+<polygon fill="#000000" stroke="#000000" points="80.1607,-263.3249 72.8876,-255.6208 73.7689,-266.1789 80.1607,-263.3249"/>
+</g>
+<!-- C____exemple&#45;&gt;end_exemple -->
+<g id="edge4" class="edge">
+<title>C____exemple-&gt;end_exemple</title>
+<path fill="none" stroke="#000000" d="M58.8972,-344.0374C60.2499,-335.6503 61.825,-325.8851 63.0361,-318.3762"/>
+<polygon fill="#000000" stroke="#000000" points="66.5252,-318.7237 64.6623,-308.294 59.6145,-317.6091 66.5252,-318.7237"/>
+</g>
+<!-- end_B -->
+<!-- start_Btermine -->
+<g id="node8" class="node">
+<title>start_Btermine</title>
+<ellipse fill="#000000" stroke="#000000" cx="29" cy="-201.4" rx="1.8" ry="1.8"/>
+</g>
+<!-- end_B&#45;&gt;start_Btermine -->
+<!-- B__end__Btermine -->
+<g id="node10" class="node">
+<title>B__end__Btermine</title>
+<polygon fill="none" stroke="#000000" points="24,-140.0377 51,-127.6 78,-140.0377 77.9748,-160.1623 24.0252,-160.1623 24,-140.0377"/>
+<text text-anchor="middle" x="51" y="-141.4" font-family="Times,serif" font-size="14.00" fill="#000000">B</text>
+</g>
+<!-- end_B&#45;&gt;B__end__Btermine -->
+<g id="edge9" class="edge">
+<title>end_B-&gt;B__end__Btermine</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M50.0174,-251.922C50.1053,-242.4089 50.5076,-198.8829 50.7694,-170.5549"/>
+<polygon fill="#000000" stroke="#000000" points="54.2725,-170.2243 50.8651,-160.1923 47.2728,-170.1595 54.2725,-170.2243"/>
+</g>
+<!-- start_Btermine&#45;&gt;B__end__Btermine -->
+<g id="edge5" class="edge">
+<title>start_Btermine-&gt;B__end__Btermine</title>
+<path fill="none" stroke="#000000" d="M29.732,-199.5434C31.5843,-194.8454 36.6465,-182.0057 41.3674,-170.0317"/>
+<polygon fill="#000000" stroke="#000000" points="44.7629,-170.9617 45.1748,-160.3749 38.2508,-168.3942 44.7629,-170.9617"/>
+</g>
+<!-- end_Btermine -->
+<g id="node9" class="node">
+<title>end_Btermine</title>
+<ellipse fill="#000000" stroke="#000000" cx="51" cy="-17.8" rx="1.8" ry="1.8"/>
+</g>
+<!-- D____Btermine -->
+<g id="node11" class="node">
+<title>D____Btermine</title>
+<ellipse fill="none" stroke="#000000" cx="51" cy="-73.6" rx="27" ry="18"/>
+<text text-anchor="middle" x="51" y="-69.4" font-family="Times,serif" font-size="14.00" fill="#000000">D</text>
+</g>
+<!-- B__end__Btermine&#45;&gt;D____Btermine -->
+<g id="edge6" class="edge">
+<title>B__end__Btermine-&gt;D____Btermine</title>
+<path fill="none" stroke="#000000" d="M51,-127.4314C51,-119.731 51,-110.5743 51,-102.0166"/>
+<polygon fill="#000000" stroke="#000000" points="54.5001,-102.0132 51,-92.0133 47.5001,-102.0133 54.5001,-102.0132"/>
+</g>
+<!-- D____Btermine&#45;&gt;end_Btermine -->
+<g id="edge7" class="edge">
+<title>D____Btermine-&gt;end_Btermine</title>
+<path fill="none" stroke="#000000" d="M51,-55.329C51,-47.065 51,-37.5164 51,-30.1189"/>
+<polygon fill="#000000" stroke="#000000" points="54.5001,-29.8688 51,-19.8688 47.5001,-29.8689 54.5001,-29.8688"/>
+</g>
+</g>
+</svg>
