@@ -29,6 +29,14 @@ Voici le déroulement du programme **`exemple`** :
 
 Le schéma suivant résume graphiquement ce qui se passe :
 
+* Le temps, du moins le temps logique, est représenté de haut en bas.
+* Les noeuds ovals représentent les instructions synchrones
+* Les noeuds en forme de maison représentent les instructions asynchrones
+* Les noeuds en forme de maison inversée représentent les instructions qui sont exécutées lorsque l'instruction asynchrone qui les précède est terminée.
+* Les flèches plaines représentent la notion de séquence synchrone (ex: on fait A, puis on démarre B, puis on fait C)
+* Les flèches pointillées représentent la notion de séquence asynchrone (ex: on fait A, puis on démarre B, puis on fait C, puis on démarre D)
+* Les grands rectangles représentent des blocs d'instructions qui vont être exécutés de manière synchrone (les instructions asynchrones sont démarrées mais ne bloquent pas l'exécution du bloc).
+
 <div style="text-align: center">
   <img src="assets/processus/processus.exemple.svg" alt="Représentation de l'exemple" style="width: min(100%, 150px);"/>
 </div>
