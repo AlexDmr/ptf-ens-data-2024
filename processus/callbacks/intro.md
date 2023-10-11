@@ -57,6 +57,7 @@ function jouerSon(url: string, cb: () => void): void {
 
 Voici le flux d'exécution attendu pour la fonction `jouerListeSonsSeq`, en prenant comme exemple une liste de 3 sons :
 <div style="text-align: center;">
+  <div style="width: min(100%, 440px);">
 <!--
 jouerListeSonsSeq => Seq__jouerSon1-  >>|  -Seq__jouerSon3
 Seq__jouerSon1 => jouerSon1- >>| -jouerSon1
@@ -64,7 +65,8 @@ Seq__jouerSon2 => -Seq__jouerSon1 ; jouerSon2- >>| -jouerSon2
 Seq__jouerSon3 => -Seq__jouerSon2 ; jouerSon3- >>|  -jouerSon3
 -->
     <img src="./jouerSonSeq.svg"                           alt="" onerror="this.style.display='none'" />
-    <img src="assets/processus/callbacks/jouerSonSeq.svg"  alt="" onerror="this.style.display='none'"  />
+    <img src="assets/processus/callbacks/jouerSonSeq.svg"  alt="" onerror="this.style.display='none'" />
+  </div>
 </div>
 
 ## Exercice 2 : Lecture en parallèle
@@ -84,11 +86,14 @@ function jouerListeSonsSimultanément(urls: string[], cb: () => void): void {
 
 Voici le flux d'exécution attendu pour la fonction `jouerListeSonsSimultanément`, en prenant comme exemple une liste de 3 sons :
 <div style="text-align: center;">
+  <div style="width: min(100%, 380px);">
 <!--
 jouerSonSimultane => jouerSon1-; jouerSon2-; jouerSon3-  >>|  -jouerSon1 && -jouerSon2 && -jouerSon3
 -->
-    <img src="./jouerSonSimultane.svg"                           alt="" onerror="this.style.display='none'" />
-    <img src="assets/processus/callbacks/jouerSonSimultane.svg"  alt="" onerror="this.style.display='none'"  />
+
+    <img src="./jouerSonSimultane.svg"                          alt="" onerror="this.style.display='none'" />
+    <img src="assets/processus/callbacks/jouerSonSimultane.svg" alt="" onerror="this.style.display='none'" />
+  </div>
 </div>
 
 
