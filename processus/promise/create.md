@@ -54,7 +54,7 @@ Il est parfois utile de pouvoir créer des promesses déjà tenues ou rejetées.
 
 C'est un des atouts majeur des promesses, il existe des fonctions de combinaison de promesses qui permettent de construire une promesse à partir de plusieurs promesses. Ces fonctions sont au nombre de 5 :
 
-1. [**`Promise.all`**](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) qui prend en paramètre un itérable (par exemple un tableau) de promesses et renvoie une promesse qui sera tenue si toutes les promesses de l'itérable le sont, qui sera rejetée sinon. Si la promesse est tenue, alors le résultat est un tableau contenant les résultats des promesses de l'itérable. Si la promesse est rejetée, elle le sera pour la même raison que la première promesse de l'itérable qui sera rejetée.
+1. [**`Promise.all`**](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) qui prend en paramètre un itérable (par exemple un tableau) de promesses et renvoie une promesse qui sera tenue si toutes les promesses de l'itérable le sont, qui sera rejetée sinon. Si la promesse est tenue, alors le résultat est un tableau contenant les résultats des promesses de l'itérable. Si la promesse est rejetée, elle le sera pour la même raison que la première promesse de l'itérable qui sera rejetée. **`Promise.all`** permet donc de gérer la synchronisation de plusieurs promesses.
 
     ```typescript
     // On suppose qu'on dspose de la fonction suivante qui hallucine une image à partir d'un texte
@@ -77,7 +77,7 @@ C'est un des atouts majeur des promesses, il existe des fonctions de combinaison
 
 3. [**`Promise.race`**](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Promise/race) qui prend en paramètre un itérable (ex: un tableau) de promesses L et renvoie une promesse dont le résultat (tenue ou rejetée) dépendra de la première promesse **`P`** à sortir de l'état **`pending`**. **`Promise.race`** prendra alors son état (que **`P`** soit tenue ou rejetté) et sa valeur.
 
-4. [**`Promise.allSettled`**](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled) qui prend en paramètre un itérable (ex: un tableau) de promesses L et renvoie une promesse qui sera toujours tenue. Elle sera tenue au moment où toutes les promesses de L auront été résolues (qu'elles soient tenues ou rejetées). Elle aura pour valeur un tableau contenant des objets indiquant si la promesse correspondant dans L a été tenue ou pas :
+4. [**`Promise.allSettled`**](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled) permet donc de gérer la synchronisation de plusieurs promesses (qu'elles soient tenues ou rejetées). Elle prend en paramètre un itérable (ex: un tableau) de promesses L et renvoie une promesse qui sera toujours tenue. Elle sera tenue au moment où toutes les promesses de L auront été résolues (qu'elles soient tenues ou rejetées). Elle aura pour valeur un tableau contenant des objets indiquant si la promesse correspondant dans L a été tenue ou pas :
 
     * En cas de succès, l'objet sera de la forme **`{status: "fulfilled", value: X}`**, avec **`X`** le résultat.
     * En cas d'échec, l'objet sera de la forme **`{status: "rejected", reason: X}`** avec **`X`** la raison de l'échec.
