@@ -1,19 +1,75 @@
 # Asynchronisme avec des callbacks
 
-XXX Les callbacks... déjà utilisé pour la prog événementielle ... ça peut aussi s'appliquer ici (quand instruction asynchrone démarre, faire..., quand instruction asynchrone termine, faire ...)
+Nous avons dékà travaillé avec les callbacks (fonctions de rappel) dans le cadre de la programmation événementielle. Nous allons voir ici comment les utiliser pour gérer l'asynchronisme.
+Les callbacks semblent à première vue être de bonnes condidates pour cela. En effet, elles permettent de définir une fonction qui sera appelée quand une instruction asynchrone termine.
 
+Supposons qu'on dispose de la fonction synchrone suivante :
 
+```typescript
+function jouerSon(url: string): void;
+```
 
-Une façon de gérer les instructions asynchrones est d'utiliser un mécanisme de fonction de rappel (callback). Cela s'applique pour l'utilisation d'instructions qui sont des appels de fonctions. L'idée est d'ajouter un paramètre de type callback à la fonction asynchrone, cette callback devant être appelée lorsque l'instruction termine.
+Cette fonction ne "rendra la main" qu'après avoir joué le son dont l'URL est passé en paramètre.
 
-Prenons l'exemple de l'instruction de lecture d'une musique que nous avons utilisé précédemment. En supposant une version synchrone de cette instruction permettant de lire une musique donnée via une URL :
+On veut rendre cette fonction asynchrone. Pour cela, on va ajouter un paramètre de type callback à la fonction de sorte à ce que cette callback soit appelée quand le son a fini d'être joué. La fonction va cette fois "rendre la main" immédiatement. Notez que le fait que la fonction rende la main immédiatement ne provient pas du simple fait d'avoir ajouté un paramètre de type callback. Pour que la fonction fonctionne effectivement comme cela il faut qu'elle s'appuie sur d'autre fonctions asynchrone ou qu'elle soit implementée au niveau du moteur JavaScript (comme c'est le cas pour les fonctions asynchrones de l'API Web telle que **`fetch`**). On ne présente donc pas ici les détails d'implémentation mais seulement la signature.
 
-function lireMusique(url) {...}
+```typescript
+/**
+ * Joue le son dont l'URL est passé en paramètre 
+ * et appel cb lorsque le son a fini d'être joué.
+ */
+function jouerSon(url: string, cb: () => void): void;
+```
 
-alors la version asynchrone utilisant des callbacks serait :
+## Généralisation
 
-function lireMusique(url, cb) {...}
+On peut généraliser cette approche à toute fonction asynchrone à base de callback.
+On ajoute un paramètre de type callback à ce qu'aurait été la version synchrone de la signature de la fonction. Cette callback sera appelée quand l'instruction asynchrone aura terminé son exécution. On peut ainsi chainer les instructions asynchrones en utilisant ces callbacks.
 
-avec cb la fonction de rappel.
+## Exercice 1 : Lecture en séquence
 
-Le type de la fonction de rappel (c'est-à-dire les paramètres le types de ses paramètres ainsi que son type de retour) est défini par le concepteur de la fonction. A minima, on s'attend à ce que cette fonction prenne en paramètre le résultat de la fonction. Il existe plusieurs conventions pour décider de la signature de la callback, selon les bibliothèques utilisées.
+Voici un petit exercice pour vous entrainer à utiliser les callbacks pour gérer l'asynchronisme.
+A partir de la fonction `jouerSon` ci-dessus, vous allez créer la fonction `jouerListeSons` qui prend en paramètre un tableau d'URL de sons et qui joue les sons les uns après les autres. La fonction `jouerListeSons` prend également en paramètre une callback qui sera appelée quand tous les sons auront été joués.
+
+```typescript
+/**
+ * Joue séquenciellement les sons dont les URL sont passées en paramètre 
+ * et appel cb lorsque le dernier son est terminé.
+ */
+function jouerListeSonsSeq(urls: string[], cb: () => void): void {
+    // à compléter
+}
+```
+
+Comment coderiez-vous la fonction `jouerListeSonsSeq` ?
+
+Vous pouvez si vous le voulez simuler le lecture de son avec *"l'implémentation"* suivante (notez l'usage de la fonction [setTimeout](https://developer.mozilla.org/fr/docs/Web/API/setTimeout) qui est elle même une fonction asynchrone à callback) :
+
+```typescript
+function jouerSon(url: string, cb: () => void): void {
+    console.log(`Début de la lecture du son ${url}`);
+    setTimeout(() => {
+        console.log(`Fin de la lecture du son ${url}`);
+        cb();
+    }, 500 + Math.rand()*1000);
+}
+```
+
+## Exercice 2 : Lecture en parallèle
+
+On suppose maintenant qu'on veut définir un orchestre qui joue plusieurs sons en parallèle (tuba, piano, violons, etc.). On dispose pour cela de la fonction `jouerSon` ci-dessus.
+Vous devez implémenter la fonction `jouerListeSonsSimultanément` qui va jouer en même temps les sons d'une liste et qui terminera lorsque tous les sons auront été joués.
+
+```typescript
+/**
+ * Joue simultanément les sons dont les URL sont passées en paramètre 
+ * et appel cb lorsque tous les sons sont terminés.
+ */
+function jouerListeSonsSimultanément(urls: string[], cb: () => void): void {
+    // à compléter
+}
+```
+
+## Point discussion
+
+Nous discuterons des solutions que vous avez proposé.
