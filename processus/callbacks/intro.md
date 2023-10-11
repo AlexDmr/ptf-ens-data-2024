@@ -55,6 +55,18 @@ function jouerSon(url: string, cb: () => void): void {
 }
 ```
 
+Voici le flux d'exécution attendu pour la fonction `jouerListeSonsSeq`, en prenant comme exemple une liste de 3 sons :
+<div style="text-align: center;">
+<!--
+jouerListeSonsSeq => Seq__jouerSon1-  >>|  -Seq__jouerSon3
+Seq__jouerSon1 => jouerSon1- >>| -jouerSon1
+Seq__jouerSon2 => -Seq__jouerSon1 ; jouerSon2- >>| -jouerSon2
+Seq__jouerSon3 => -Seq__jouerSon2 ; jouerSon3- >>|  -jouerSon3
+-->
+    <img src="./jouerSonSeq.svg"                           alt="" onerror="this.style.display='none'" />
+    <img src="assets/processus/callbacks/jouerSonSeq.svg"  alt="" onerror="this.style.display='none'"  />
+</div>
+
 ## Exercice 2 : Lecture en parallèle
 
 On suppose maintenant qu'on veut définir un orchestre qui joue plusieurs sons en parallèle (tuba, piano, violons, etc.). On dispose pour cela de la fonction `jouerSon` ci-dessus.
@@ -69,6 +81,16 @@ function jouerListeSonsSimultanément(urls: string[], cb: () => void): void {
     // à compléter
 }
 ```
+
+Voici le flux d'exécution attendu pour la fonction `jouerListeSonsSimultanément`, en prenant comme exemple une liste de 3 sons :
+<div style="text-align: center;">
+<!--
+jouerSonSimultane => jouerSon1-; jouerSon2-; jouerSon3-  >>|  -jouerSon1 && -jouerSon2 && -jouerSon3
+-->
+    <img src="./jouerSonSimultane.svg"                           alt="" onerror="this.style.display='none'" />
+    <img src="assets/processus/callbacks/jouerSonSimultane.svg"  alt="" onerror="this.style.display='none'"  />
+</div>
+
 
 ## Point discussion
 
