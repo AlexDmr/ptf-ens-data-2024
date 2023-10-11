@@ -1,4 +1,4 @@
-# Représentation de processus asynchrones
+# Représentation de flux asynchrones
 
 Reprenons l'exemple précédent et modifions le un peu, voici un psuedo-code qui représente le programme **`exemple`** :
 
@@ -38,5 +38,9 @@ Le schéma suivant résume graphiquement ce qui se passe :
 * Les grands rectangles représentent des blocs d'instructions qui vont être exécutés de manière synchrone (les instructions asynchrones sont démarrées mais ne bloquent pas l'exécution du bloc).
 
 <div style="text-align: center">
+  <!--
+  exemple => A; B-; C;
+  QuandBtermineAlorsExecuterD => -B; D;
+  -->
   <img src="assets/processus/processus.exemple.svg" alt="Représentation de l'exemple" style="width: min(100%, 150px);"/>
 </div>

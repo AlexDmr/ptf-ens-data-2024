@@ -1,6 +1,6 @@
 # Dans le navigateur
 
-Dans le navigateur Web, le moteur Javascript est mono-threadé. 
+Dans le navigateur Web, le moteur Javascript est mono-threadé.
 Cela signifie que le moteur Javascript ne peut exécuter qu'une seule instruction à la fois.
 Cependant, le navigateur est capable d'exécuter des instructions asynchrones (ex: fetch, setTimeout, etc.) et de réagir à des événements (ex: clic, chargement d'une image, etc.) sans bloquer l'exécution du programme.
 
@@ -12,5 +12,9 @@ Bien entendu, le moteur gère en sous main des threads, mais il ne les expose pa
 Reprenons l'exemple précédent, l'instruction **`B`** est asynchrone, lorsqu'elle est exécuté (case rectangulaire B du schéma), le navigateur ne bloque pas tout le système, ce qui signifie qu'en sous main il va démarrer ou utiliser un autre thread pour lire la musique. Lorsque la musique est terminée, le navigateur va réagir, marquer l'instruction **`B`** comme étant terminé, ce qui va pousser dans la file d'instructions à exécuter l'instruction **`D`**.
 
 <div style="text-align: center">
+  <!--
+  exemple => A; B-; C;
+  QuandBtermineAlorsExecuterD => -B; D;
+  -->
   <img src="assets/processus/processus.exemple.svg" alt="Représentation de l'exemple" style="width: min(100%, 150px);"/>
 </div>
