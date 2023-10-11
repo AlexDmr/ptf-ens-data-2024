@@ -24,7 +24,7 @@ Avec :
 * **`A`** : Afficher un message "début" dans le terminal (synchrone).
 * **`B`** : Lire une musique de 2 minutes (asynchrone).
 * **`C`** : Afficher un message "fin" dans le terminal (synchrone).
-* **`D`** une instruction qui affiche un message "fin" dans le terminal (synchrone).
+* **`D`** une instruction qui affiche un message "plus de musique" dans le terminal (synchrone).
 
 Lorsqu'il exécutera ce programme, l'utilisateur verra s'afficher immédiatement dans le terminal "début" et "fin" et il entendra la musique pendant 2 minutes. L'instruction **`A`** est synchrone, le programme attendra donc que le le message "début" soit effectivement affiché dans le terminal avant de passer à l'instruction **`B`**. L'instruction **`B`** est quant à elle asynchrone, elle va donc démarrer (ce qui va déclencher la lecture de la musique) et le programme exécutera alors l'instruction **`C`** sans attendre que la musique soit terminée (fin de l'instruction B). Quand la musique sera terminée, l'instruction **`D`** sera exécutée.
 

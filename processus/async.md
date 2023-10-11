@@ -16,7 +16,7 @@ Voici le déroulement du programme **`exemple`** :
 * 1 Dans le terminal, le message "début" s'affiche.
 * 2 Le système note qu'il faut exécuter **`B`**.
 * 3 Le système note que lorsque B sera terminé, il faudra exécuter **`D`**.
-* 4 Dans le terminal, le message "fin" s'affiche.
+* 4 Dans le terminal, le message "plus de musique" s'affiche.
 * 5 Le système a terminé la lecture du bloc d'instruction :
 
   * 5-a il regarde si il y a autre chose à faire.
