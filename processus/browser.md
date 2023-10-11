@@ -1,15 +1,6 @@
 # Dans le navigateur
 
-Dans le navigateur Web, le moteur Javascript est mono-threadé.
-Cela signifie que le moteur Javascript ne peut exécuter qu'une seule instruction à la fois.
-Cependant, le navigateur est capable d'exécuter des instructions asynchrones (ex: fetch, setTimeout, etc.) et de réagir à des événements (ex: clic, chargement d'une image, etc.) sans bloquer l'exécution du programme.
-
-Cela signifie que le moteur gère une file d'attente d'instructions asynchrones et d'événements à traiter.
-Lorsqu'une instruction asynchrone est démarrée, elle est placée dans cette file d'attente et le moteur passe à l'instruction suivante.
-
-Bien entendu, le moteur gère en sous main des threads, mais il ne les expose pas à l'utilisateur, vous ne pouvez pas en créer vous même (les plus curieux peuvent cependant jeter un coup d'oeil aux [Web Workers](https://developer.mozilla.org/fr/docs/Web/API/Web_Workers_API) qui permettent de créer et de communiquer avec d'autres instances du moteur Javascript).
-
-Reprenons l'exemple précédent, l'instruction **`B`** est asynchrone, lorsqu'elle est exécuté (case rectangulaire B du schéma), le navigateur ne bloque pas tout le système, ce qui signifie qu'en sous main il va démarrer ou utiliser un autre thread pour lire la musique. Lorsque la musique est terminée, le navigateur va réagir, marquer l'instruction **`B`** comme étant terminé, ce qui va pousser dans la file d'instructions à exécuter l'instruction **`D`**.
+La mise en oeuvre des flux asynchrones s'appuie sur un mécanisme de file d'attente d'instructions à exécuter (un peu comme la file d'événements). Reprenons l'exemple précédent pour illustrer notre propos.
 
 <div style="text-align: center">
   <!--
@@ -18,3 +9,17 @@ Reprenons l'exemple précédent, l'instruction **`B`** est asynchrone, lorsqu'el
   -->
   <img src="assets/processus/processus.exemple.svg" alt="Représentation de l'exemple" style="width: min(100%, 150px);"/>
 </div>
+
+Lorsque le programme est exécuté, il ajoute à la file d'attente d'instructions à exécuter le programme principal.
+Il exécute donc ici le le flux **`exemple`**.
+
+ajoute B à la liste des instructions à exécuter
+
+défile B, B s'execute (lance un thread car c'est de la lecture de musique, pourrait ne pas lancer de thread si autre chose). B rend la main, elle préviendra quand il sera terminée.
+
+B termine, tous les blocs d'instructions qui démarre par **`B est terminé`** sont enfilés dans la file d'attente.
+
+On défile (ici le bloc "QuandBtermine") et on exécute ce bloc.
+
+XXX Ajouter une table avec les instruction asynchrone <état; file de callbacks> ???? Oui ça pourrait être pas mal !!!
+

@@ -39,15 +39,3 @@ Le flux asynchrone met en oeuvre des instructions au sein d'un seul thread. Ces 
 Reprenons l'exemple précédent. L'instruction **`B`** est asynchrone, cela signifie qu'on peut démarrer son exécution et passer à la suite (ici exécuter l'instruction **`C`**) et qu'on a un moyen de savoir quand elle est terminée pour exécuter ensuites d'autres instructions (ici l'instruction **`D`**).
 
 ### La problématique des flux asynchrone est de donner les moyens d'exprimer ce type d'ordonnancement
-
-<section>
-    <script src="//d3js.org/d3.v5.min.js"></script>
-    <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script>
-    <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
-    <div id="graph" style="text-align: center;"></div>
-    <script>
-        console.log("coucou");
-        d3.select("#graph").graphviz()
-            .renderDot('digraph  {a -> b}');
-    </script>
-</sction>
