@@ -46,6 +46,7 @@ Reprenons l'exemple précédent. L'instruction **`B`** est asynchrone, cela sign
     <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
     <div id="graph" style="text-align: center;"></div>
     <script>
+        console.log("coucou");
         d3.select("#graph").graphviz()
             .renderDot('digraph  {a -> b}');
     </script>
