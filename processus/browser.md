@@ -12,7 +12,7 @@ On va représenter la machine sous la forme d'un schéma avec :
 * Un haut parleur : si le symbole du haut parleur est affiché, cela signifie que la musique est en train d'être jouée, sinon cela signifie qu'on ne joue aucune musique.
 * Un diagramme de flux asynchrone tel que vu précédemment.
 
-<iframe src="https://univgrenoble-my.sharepoint.com/personal/demeurea_azure_univ-grenoble-alpes_fr/_layouts/15/embed.aspx?UniqueId=c201c8b3-06fc-4f5e-bdf1-bffb575dca08" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="ArchiProcessis.pptx"></iframe>
+<iframe src="https://univgrenoble-my.sharepoint.com/personal/demeurea_azure_univ-grenoble-alpes_fr/_layouts/15/embed.aspx?UniqueId=c201c8b3-06fc-4f5e-bdf1-bffb575dca08" style="min-height: 360px; width: min(100%, 640px)" frameborder="0" scrolling="no" allowfullscreen title="ArchiProcessis.pptx"></iframe>
 
 ## Commentaire du déroulé étape par étape
 
