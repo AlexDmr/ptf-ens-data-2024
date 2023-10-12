@@ -25,7 +25,7 @@ Une promesse est un ***objet*** dont le rôle est de modéliser l'état dans leq
 2. Si au contraire une erreur est survenue lors du traitement, alors la promesse passe dans l'état **`rejected`** et il est alors possible de récupérer la raison pour laquelle l'erreur est survenue.
 
 <figure style="text-align: center; width: min(100%, 350px); margin: auto;">
-    <img src="./CycleViePromesse.png"                        alt="" onerror="this.style.display='none'" />
-    <img src="assets/processus/promise/CycleViePromesse.png" alt="" onerror="this.style.display='none'" />
+    <img src="./CycleViePromesse.png"                        style="width: 100%" alt="" onerror="this.style.display='none'" />
+    <img src="assets/processus/promise/CycleViePromesse.png" style="width: 100%" alt="" onerror="this.style.display='none'" />
     <caption>Cycle de vie de l'instruction asynchrone modélisé par une promesse.</caption>
 </figure>
