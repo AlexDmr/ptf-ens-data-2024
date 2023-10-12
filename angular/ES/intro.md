@@ -16,6 +16,19 @@ Notez comment fonctionne la communication entre A et B :
 * A chaque fois que sig() produit une nouvelle valeur, celle-ci est transmise à B. Angular déclanche alors un cycle de mise à jour du composant B (il évalue les data-binding internes au composant pour mettre à jour la vue de B).
 * A chaque fois que B émet un événement update, l'instruction `changeWith($event)` est évaluée dans le contexte du composant A (`$event` référence la valeur qui a été émise par la l'événement `update`). Angular déclanche alors un cycle de mise à jour du composant A (il évalue les data-binding internes au composant pour mettre à jour la vue de A).
 
-<div style="text-align: center">
-  <img src="assets/angular/ES/ES_entre_composants.png" alt="Arbre des composants" style="max-width: min(100%, 800px);"/>
-</div>
+<figure style="text-align: center; margin: auto; max-width: min(100%, 800px);">
+  <img  src="assets/angular/ES/ES_entre_composants.png"
+        alt=""
+        style="width: 100%;"
+        onerror="this.style.display = none"
+        />
+  <img  src="./ES_entre_composants.png"
+        alt=""
+        style="width: 100%;"
+        onerror="this.style.display = none"
+        />
+  <figcaption>
+    Arbre des composants
+  </figcaption>
+
+</figure>
