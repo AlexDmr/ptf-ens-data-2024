@@ -10,15 +10,15 @@ La méthode **`pipe`** permet de dériver un observable en un autre observable. 
 
 L'opérateur RxjS **`map`** (à ne pas confondre avec la méthde map des tableaux) prend en paramètre un observable de type **`Observable<T>`** et renvoie un observable de type **`Observable<U>`**. Il permet de transformer les valeurs émises par l'observable en d'autres valeurs. Il est possible de lui passer une fonction de transformation **`T -> U`**.
 
-    ```typescript
+```typescript
     // Exemple avec l'observable interval qui produit un entier toutes les N ms (N passé en paramètre, ici 1000).
     const source  = interval(1000);
     const derived = source.pipe(
         map(x => 10 * x)
     );
-    ```
+```
 
-    <figure style="text-align: center; margin: auto; max-width: min(100%, 600px);">
+<figure style="text-align: center; margin: auto; max-width: min(100%, 600px);">
     <img  src="https://rxjs.dev/assets/images/marble-diagrams/map.png"
             alt=""
             style="width: 100%;"
@@ -28,20 +28,20 @@ L'opérateur RxjS **`map`** (à ne pas confondre avec la méthde map des tableau
         Schéma de l'opérateur map, tiré de la [documentation RxJS](https://rxjs.dev/api/operators/map). En haut, l'observable source, en bas, l'observable dérivé de source par map.
     </figcaption>
 
-    </figure>
+</figure>
 
 ### [L'opérateur **`filter`**](https://rxjs.dev/api/operators/filter)
 
 L'opérateur RxJS **`filter`** prend en paramètre un observable de type **`Observable<T>`** et renvoie un observable de type **`Observable<T>`**. Il permet de filtrer les valeurs émises par l'observable. Il est possible de lui passer une fonction de test **`T -> boolean`**.
 
-    ```typescript
+```typescript
     const source  = interval(1000);
     const derived = source.pipe(
         filter(x => x % 2 === 0)
     );
-    ```
+```
 
-    <figure style="text-align: center; margin: auto; max-width: min(100%, 600px);">
+<figure style="text-align: center; margin: auto; max-width: min(100%, 600px);">
         <img  src="https://rxjs.dev/assets/images/marble-diagrams/filter.png"
                 alt=""
                 style="width: 100%;"
@@ -50,19 +50,20 @@ L'opérateur RxJS **`filter`** prend en paramètre un observable de type **`Obse
         <figcaption>
             Schéma de l'opérateur filter, tiré de la [documentation RxJS](https://rxjs.dev/api/operators/filter). En haut, l'observable source, en bas, l'observable dérivé de source par filter.
         </figcaption>
-    </figure>
+</figure>
 
 ### [L'opérateur **`scan`**](https://rxjs.dev/api/operators/scan) 
 
 L'opérateur RxJS **`scan`** prend en paramètre un observable de type **`Observable<T>`** et renvoie un observable de type **`Observable<U>`**. Il permet de transformer les valeurs émises par l'observable en d'autres valeurs. Il est possible de lui passer une fonction de transformation **`T -> U`**. La différence avec **`map`** est que la fonction de transformation prend en paramètre la valeur courante et la valeur précédente. Cela permet de faire des calculs cumulatifs.
 
-    ```typescript
+```typescript
     const source  = interval(1000);
     const derived = source.pipe(
         scan((acc, x) => acc + x, 0)
     );
-    ```
-    <figure style="text-align: center; margin: auto; max-width: min(100%, 600px);">
+```
+
+<figure style="text-align: center; margin: auto; max-width: min(100%, 600px);">
         <img  src="https://rxjs.dev/assets/images/marble-diagrams/scan.png"
                 alt=""
                 style="width: 100%;"
@@ -71,7 +72,7 @@ L'opérateur RxJS **`scan`** prend en paramètre un observable de type **`Observ
         <figcaption>
             Schéma de l'opérateur scan, tiré de la [documentation RxJS](https://rxjs.dev/api/operators/scan). En haut, l'observable source, en bas, l'observable dérivé de source par scan.
         </figcaption>
-    </figure>
+</figure>
 
 ### Chainer les opérateurs
 
@@ -89,7 +90,7 @@ const derived: Observable<number> = source.pipe(
 
 Il existe de nombreux autres [opérateurs](https://rxjs.dev/api/operators), nous ne pourrons pas tous les présenter ici mais nous en introduirons petit à petit.
 
-## Observable : définition et usage
+## Un parallèle entre observable et fonctions
 
 Un dernier point avant de passer à la pratique. Dans cette page nous n'avons fait que **définir** des observables, nous ne les avons pas **appelé/utilisé**.
 
@@ -97,8 +98,5 @@ Les observables peuvent être vu comme[ une généralisation des fonctions](http
 
 * On peut définir une fonction sans l'appeler, on peut définir un observable sans s'y abonner.
 * Si on appelle pas la fonction, le code qu'elle contient n'est pas exécuté. De même, si on ne s'abonne pas à l'observable, le code qu'il contient n'est pas exécuté.
-
-
-
-XXX 
-Observables are able to deliver values either synchronously or asynchronously.
+* On appelle une fonction avec l'opérateur **`()`**, on *"appelle"* un observable en s'y abonnant.
+* Une fonction peut être synchrones ou asynchrone, un observable peut être synchrone ou asynchrone. On parle d'observable synchrone lorsque les valeurs sont produites immédiatement et  et d'observable asynchrone lorsque les valeurs sont produites au cours du temps (par exemple, à interval régulier, ou en réaction à un événement).
