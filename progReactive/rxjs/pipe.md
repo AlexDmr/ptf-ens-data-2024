@@ -19,7 +19,7 @@ L'opérateur RxjS **`map`** (à ne pas confondre avec la méthde map des tableau
 ```
 
 <figure style="text-align: center; margin: auto; max-width: min(100%, 600px);">
-    <img  src="https://rxjs.dev/local://assets/images/marble-diagrams/map.png"
+    <img  src="https://rxjs.dev/assets/images/marble-diagrams/map.png"
             alt=""
             style="width: 100%;"
             onerror="this.style.display = none"
@@ -42,7 +42,7 @@ L'opérateur RxJS **`filter`** prend en paramètre un observable de type **`Obse
 ```
 
 <figure style="text-align: center; margin: auto; max-width: min(100%, 600px);">
-        <img  src="https://rxjs.dev/local://assets/images/marble-diagrams/filter.png"
+        <img  src="https://rxjs.dev/assets/images/marble-diagrams/filter.png"
                 alt=""
                 style="width: 100%;"
                 onerror="this.style.display = none"
