@@ -5,7 +5,7 @@ Certains événements, mais pas tous, se propagent dans le DOM. Pour bien compre
 La figure ci dessous, tiré de la [spécification officielle du W3C](https://www.w3.org/TR/DOM-Level-3-Events), illustre un arbre simple. On suppose que l'utilisateur a cliqué sur la balise td qui contient le texte "Over the River, Charlie". L'événement commence (phase 1 dîte de **capture**) par descendre de la racine au nœud cliqué, on arrive alors sur le noeud (phase 2 dîte **target**) et on remonte ensuite vers la racine (phase 3 dîte de **bubbling**).
 
 <div style = "text-align: center; margin: auto;">
-    <img src   = "assets/progEvent/eventflow.svg" style="max-width: 400px;"/>
+    <img src   = "local://assets/progEvent/eventflow.svg" style="max-width: 400px;"/>
 </div>
 
 D'une manière générale, il y a temporellement trois phases de propagation d'un événement (voir illustration ci-dessous, tirée de la spécification du W3C) :

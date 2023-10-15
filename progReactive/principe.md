@@ -25,7 +25,7 @@ La programmation réactive se base sur le fait que des variables dépendent d'au
 On peut représenter les dépendances entre variables par un graphe orienté. Chaque variable est représentée par un nœud et une flèche part de chaque variable vers les variables qui en sont dépendantes.
 
 <div style="text-align:center">
-    <img src="assets/progReactive/dependances.abc.svg" alt="Graphe de dépendances entre les variables a, b et c" style="max-width: min(100%, 300px);" />
+    <img src="local://assets/progReactive/dependances.abc.svg" alt="Graphe de dépendances entre les variables a, b et c" style="max-width: min(100%, 300px);" />
 </div>
 
 ## Dépendances plus complexes
@@ -38,7 +38,7 @@ Le système de dépendances peut être plus complexe. Par exemple :
 * `d = b + c - 2a`
 
 <div style="text-align:center">
-    <img src="assets/progReactive/dependances.abcd.svg" alt="Graphe de dépendances entre les variables a, b, c et d" style="max-width: min(100%, 300px);" />
+    <img src="local://assets/progReactive/dependances.abcd.svg" alt="Graphe de dépendances entre les variables a, b, c et d" style="max-width: min(100%, 300px);" />
     <!-- Tiré de https://csacademy.com/app/graph_editor/ -->
 </div>
 

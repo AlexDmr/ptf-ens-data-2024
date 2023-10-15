@@ -17,7 +17,7 @@ Notez comment fonctionne la communication entre A et B :
 * A chaque fois que B émet un événement update, l'instruction `changeWith($event)` est évaluée dans le contexte du composant A (`$event` référence la valeur qui a été émise par la l'événement `update`). Angular déclanche alors un cycle de mise à jour du composant A (il évalue les data-binding internes au composant pour mettre à jour la vue de A).
 
 <figure style="text-align: center; margin: auto; max-width: min(100%, 800px);">
-  <img  src="assets/angular/ES/ES_entre_composants.png"
+  <img  src="local://assets/angular/ES/ES_entre_composants.png"
         alt=""
         style="width: 100%;"
         onerror="this.style.display = none"

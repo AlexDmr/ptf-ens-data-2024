@@ -17,7 +17,7 @@ Une solution bien éprouvée à ce problème est le **patron de conception Obser
 Le schéma suivant illustre cela : 1) **L'observateur** commence par s'abonner auprès de **l'observable**. Ce dernier enregistre l'abonnement et 2) notifie **l'observateur** à chaque fois qu'il le doit (zéro ou plusieurs fois). Une fois que **l'observateur** n'est plus intéressé ou qu'il est détruit alors 3) il se désabonne de **l'observable**.
 
 <div style="text-align:center">
-    <img src="assets/progReactive/Schema_IV.2.gif" alt="Schéma du patron de conception Observateur/Observable" style="max-width: min(100%, 400px)" />
+    <img src="local://assets/progReactive/Schema_IV.2.gif" alt="Schéma du patron de conception Observateur/Observable" style="max-width: min(100%, 400px)" />
 </div>
 
 ## Limites

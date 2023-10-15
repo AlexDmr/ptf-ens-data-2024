@@ -11,7 +11,7 @@ Le ***Noyau fonctionnel*** est la partie du code qui contient les données et le
 L'***interface*** est la partie du code qui fait le lien, l'interface, entre le noyau fonctionnel et les dispositifs de sorties. Elle a un rôle de traducteur entre les deux. C'est ici qu'on va coder les éléments graphiques à afficher à l'écran, qu'on va interpréter les données reçues des dispositifs pour les traduire en commandes sur le noyau fonctionnel.
 
 <div style="text-align:center">
-    <img src   = "assets/archi/ArchiGenerale.png"
+    <img src   = "local://assets/archi/ArchiGenerale.png"
          alt   = "Schéma d'un système interactif"
          style = "max-width: min(100%, 808px);"
          />

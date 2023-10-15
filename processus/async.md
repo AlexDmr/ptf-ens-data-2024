@@ -42,5 +42,5 @@ Le schéma suivant résume graphiquement ce qui se passe :
   exemple => A; B-; C;
   QuandBtermineAlorsExecuterD => -B; D;
   -->
-  <img src="assets/processus/processus.exemple.svg" alt="Représentation de l'exemple" style="width: min(100%, 150px);"/>
+  <img src="local://assets/processus/processus.exemple.svg" alt="Représentation de l'exemple" style="width: min(100%, 150px);"/>
 </div>

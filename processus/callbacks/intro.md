@@ -64,7 +64,7 @@ Seq__jouerSon2 => -Seq__jouerSon1 ; jouerSon2- >>| -jouerSon2
 Seq__jouerSon3 => -Seq__jouerSon2 ; jouerSon3- >>|  -jouerSon3
 -->
     <img src="./jouerSonSeq.svg"                           alt="" onerror="this.style.display='none'" />
-    <img src="assets/processus/callbacks/jouerSonSeq.svg"  alt="" onerror="this.style.display='none'" />
+    <img src="local://assets/processus/callbacks/jouerSonSeq.svg"  alt="" onerror="this.style.display='none'" />
 </div>
 
 ## Exercice 2 : Lecture en parallèle
@@ -88,7 +88,7 @@ Voici le flux d'exécution attendu pour la fonction `jouerListeSonsSimultanémen
 jouerSonSimultane => jouerSon1-; jouerSon2-; jouerSon3-  >>|  -jouerSon1 && -jouerSon2 && -jouerSon3
 -->
     <img src="./jouerSonSimultane.svg"                          alt="" onerror="this.style.display='none'" />
-    <img src="assets/processus/callbacks/jouerSonSimultane.svg" alt="" onerror="this.style.display='none'" />
+    <img src="local://assets/processus/callbacks/jouerSonSimultane.svg" alt="" onerror="this.style.display='none'" />
 </div>
 
 

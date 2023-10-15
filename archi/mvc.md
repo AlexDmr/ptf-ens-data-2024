@@ -9,7 +9,7 @@ MVP est l'acronyme de Model-View-Presenter. MVP peut être utilisé pour modéli
 Le schéma suivant illustre comment Model, View et Presenter communiquent entre eux. Le **modèle** est une structure (généralement, un objet) donnant accès à des éléments du noyau fonctionnel (c'est rarement le noyau lui-même). La **vue** décrit la façon dont l'interface doit être rendue perceptible à l'utilisateur (par exemple, en utilisant des éléments graphiques ou sonore). Enfin, le **présentateur** à un rôle de traducteur entre la vue et le modèle. D'une part, il s'abonne aux événements utilisateur produits par la vue (ex : clic sur bouton, mot-clé prononcé, etc.) et traduit cela en commandes ou mise à jour du modèle. D'autre part, il observe le modèle qui peut le prévenir de changements d'états ou d'événements et met à jour la vue en conséquence.
 
 <div style="text-align:center">
-    <img src   = "assets/archi/schema_V.2.2_Plan_de_travail_1_Plan_de_travail_1.png"
+    <img src   = "local://assets/archi/schema_V.2.2_Plan_de_travail_1_Plan_de_travail_1.png"
          alt   = "Schéma d'un système interactif"
          style = "max-width: min(100%, 500px);"
          />

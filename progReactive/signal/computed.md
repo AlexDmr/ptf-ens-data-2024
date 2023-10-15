@@ -29,7 +29,7 @@ console.log( p() ); // { name: "Alice", age: 24 }
 Dans l'exemple précédent, on a le graphe de dépendance suivant (rappel : chaque flèche x -> y représente le fait que le signal y est dépendant du signal x, c'est à dire qu'une mise à jour de la valeur de x aura un impact sur la valeur de y) :
 
 <div style="text-align:center">
-    <img src="assets/progReactive/signal/dependances.person.svg" alt="Graphe de dépendances entre les signaux n, a et p" style="max-width: min(100%, 300px);" />
+    <img src="local://assets/progReactive/signal/dependances.person.svg" alt="Graphe de dépendances entre les signaux n, a et p" style="max-width: min(100%, 300px);" />
 </div>
 
 ## Les signaux dérivés sont en lecture seule
@@ -64,5 +64,5 @@ console.log( Lp() ); // [ { name: "Alice", age: 25 }, { name: "Alice", age: 25 }
 Avec le graphe de dépendance suivant :
 
 <div style="text-align:center">
-    <img src="assets/progReactive/signal/dependances.ListPersons.svg" alt="Graphe de dépendances entre les signaux n, a et p" style="max-width: min(100%, 350px);" />
+    <img src="local://assets/progReactive/signal/dependances.ListPersons.svg" alt="Graphe de dépendances entre les signaux n, a et p" style="max-width: min(100%, 350px);" />
 </div>

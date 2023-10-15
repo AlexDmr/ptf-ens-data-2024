@@ -3,7 +3,7 @@
 La bibliothèque RxJS offre de nombreux objets observables. Nous allons en étudier trois pour le moment : les **`Observables`**, les **`Subjects`** et les **`BehaviorSubject`**.
 
 <figure style="text-align: center; margin: auto; max-width: min(100%, 235px);">
-  <img  src="assets/progReactive/rxjs/obsSubjBS.png"
+  <img  src="local://assets/progReactive/rxjs/obsSubjBS.png"
         alt=""
         style="width: 100%;"
         onerror="this.style.display = none"

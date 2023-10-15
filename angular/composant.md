@@ -10,7 +10,7 @@ La *vue* définie la structure HTML (fichier HTML) ainsi que la mise en page (fi
 * ***la vue-modèle*** : c'est la partie va contenir les données et les méthodes qui vont être utilisées dans la vue.
 
 <figure style="text-align: center">
-    <img    src="assets/archi/schema_VI.3.1_Plan_de_travail_1.png"
+    <img    src="local://assets/archi/schema_VI.3.1_Plan_de_travail_1.png"
             style="max-width: min(100%, 640px);"
             />
     <figcaption>

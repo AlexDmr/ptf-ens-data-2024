@@ -9,7 +9,7 @@ Nous utiliserons dans ce bloc la bibliothèque RxJS car elle permet non seulemen
 Dans RxJS, un observable définit un flux d'événements qui a un début, peut avoir une fin, peut émettre des valeurs et se termine soit par un marqueur de fin soit par une erreur (c'est un OU exclusif). La figure suivante illustre la notation graphique qui est utilisée pour les représenter.
 
 <figure style="text-align: center; margin: auto; max-width: min(100%, 773px);">
-  <img  src="assets/progReactive/rxjs/observableAnim1.gif"
+  <img  src="local://assets/progReactive/rxjs/observableAnim1.gif"
         alt=""
         style="width: 100%;"
         onerror="this.style.display = none"
