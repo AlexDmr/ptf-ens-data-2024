@@ -68,7 +68,7 @@ Bien entendu, il faut lier ces deux sujets sources de sorte qu'une requête ne s
 
 ## Résultat attendu
 
-Voici ce que ça devrait donner, :
+Voici ce que ça devrait donner, la barre verte représente le temps, la zone verte représente la période de `timeRange` millisecondes :
 
 <iframe src="https://alexdmr.github.io/l3m-2023-2024-rxjs-fifo/"
         style="width: 100%; height: 200px; border: solid black 1px; border-radius: 0.5em; overflow: hidden;"
