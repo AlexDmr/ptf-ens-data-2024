@@ -1,6 +1,6 @@
 # Exercice : Une file d'appel contrainte
 
-Vous allez forker le projet stackblitz suivant : ***XXX***
+Vous allez forker le projet stackblitz suivant : [https://stackblitz.com/edit/ptf-ens-l3m-rxjs-fifo-etu](https://stackblitz.com/edit/ptf-ens-l3m-rxjs-fifo-etu)
 
 <div style="text-align: center">
     <button onclick = "window.scrollTo(0, 100000)"
@@ -68,7 +68,9 @@ Bien entendu, il faut lier ces deux sujets sources de sorte qu'une requête ne s
 
 ## Résultat attendu
 
-Voici ce que ça devrait donner, la barre verte représente le temps, la zone verte représente la période de `timeRange` millisecondes :
+Voici ce que ça devrait donner, la barre verte représente le temps, la zone verte représente la période de `timeRange` millisecondes. Les requêtes sont représentés par les barres grise, le côté gauche de ces barres représente la date d'émission de la requête et le côté droit la date de réception de la réponse.
+
+Dans votre version, vous verrez aussi des lignes rouges qui représentent les rejets de la requête par le serveur (trop de requêtes simultanées). La barre à gauche représente la date d'émission de la requête rejetée. En cas de requête rejettée, une erreur s'affiche aussi dans la console.
 
 <iframe src="https://alexdmr.github.io/l3m-2023-2024-rxjs-fifo/"
         style="width: 100%; height: 200px; border: solid black 1px; border-radius: 0.5em; overflow: hidden;"
