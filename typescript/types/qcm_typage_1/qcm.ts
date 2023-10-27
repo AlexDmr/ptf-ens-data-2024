@@ -9,7 +9,7 @@ export const qcm: QCM = {
         { "correct": false, "label": "let v: boolean | string" }, 
         { "correct": false, "label": "let v = 'true' | 'false'" }, 
         { "correct": false, "label": "let v = boolean | 'true' | 'false'" }, 
-        { "correct": false, "label": "let v: boolean | `${boolean}`" }, 
+        { "correct": true , "label": "let v: boolean | `${boolean}`" }, 
         { "correct": false, "label": "let v: boolean & 'true' & 'false'" }
     ] 
 }
