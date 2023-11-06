@@ -11,6 +11,10 @@ Les signaux sont nécessairement synchrones, là où les observables peuvent êt
 
 Ainsi, pour les cas où on a besoind de gérer des valeurs asynchrones, il est préférable d'utiliser des observables RxJS. Dans le cas où on gère des valeurs synchrones, les deux approches sont équivalentes et on choisira la plus simple à mettre en oeuvre. Nous verrons de plus dans une section ultérieur qu'il est possible de convertir un observable RxJS en signal et vice-versa.
 
+## Paradygme de programmation
+
+Les signaux sont des variables qui peuvent être observées. Ils sont donc très proches des variables classiques et peuvent être utilisés dans le cadre d'une programmation impérative. Les observables RxJS sont des flux de données qui peuvent être observés. Ils sont donc plus proches des flux de données et sont plus adaptés à une programmation fonctionnelle.
+
 ## Usage typique
 
 Dans le cadre d'Angular, les signaux seront plutôt utilisés pour gérer l'état interne d'un composant et les observables RxJS pour gérer l'accès à des services ou des données externes. Les observables RxJS offrent une grande richesse et une grande souplesses pour définir des flux de données, ils sont à privilégier lorsque les flux sont relativement complexes et/ou sont asynchrones. Les signaux sont plus simples à mettre en oeuvre et sont à privilégier lorsque les flux sont simples et synchrones. En pratique, l'usage de l'un ou l'autre peut aussi être conditionné par l'API des services utilisés.
