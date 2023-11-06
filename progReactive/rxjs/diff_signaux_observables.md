@@ -1,0 +1,16 @@
+# Points communs et différences entre signaux et observables RxJS
+
+Les observables RxJS, tout comme les signaux, permettent de mettre en oeuvre une programmation réactive. Cependant, il existe des différences importantes entre ces deux approches. Nous allons les détailler dans cette section.
+
+## Synchronicité
+
+Les signaux sont nécessairement synchrones, là où les observables peuvent être synchrones ou asynchrone. En particulier, un signal DOIT être initialisé avec une valeur. Un observable RxJS peut ne pas avoir de valeur initiale et ne produire sa première valeur que plus tard (dans le cas d'un Subject par exemple).
+
+* Un signal primaire peut être comparé à un BehaviorSubject (il a toujours une valeur à publier).
+* Un signal dérivé peut être comparé à un Observable RxJS qui aurait toujours ue valeur à publier.
+
+Ainsi, pour les cas où on a besoind de gérer des valeurs asynchrones, il est préférable d'utiliser des observables RxJS. Dans le cas où on gère des valeurs synchrones, les deux approches sont équivalentes et on choisira la plus simple à mettre en oeuvre. Nous verrons de plus dans une section ultérieur qu'il est possible de convertir un observable RxJS en signal et vice-versa.
+
+## Usage typique
+
+Dans le cadre d'Angular, les signaux seront plutôt utilisés pour gérer l'état interne d'un composant et les observables RxJS pour gérer l'accès à des services ou des données externes. Les observables RxJS offrent une grande richesse et une grande souplesses pour définir des flux de données, ils sont à privilégier lorsque les flux sont relativement complexes et/ou sont asynchrones. Les signaux sont plus simples à mettre en oeuvre et sont à privilégier lorsque les flux sont simples et synchrones. En pratique, l'usage de l'un ou l'autre peut aussi être conditionné par l'API des services utilisés.
