@@ -1,0 +1,1146 @@
+{
+    "title": "CL&IHM",
+    "sources": "https://alexdmr.github.io/ptf-ens-data-2024",
+    "classroomId": 177393,
+    "courses": [
+        {
+            "id": 1,
+            "title": "Typescript",
+            "type": "course",
+            "coords": {
+                "x": 30,
+                "y": 255,
+                "width": 306,
+                "height": 557
+            },
+            "inputs": [
+                13
+            ],
+            "outputs": [
+                2,
+                {
+                    "fromPlaceSide": "top",
+                    "toPlaceId": 8,
+                    "toPlaceSide": "left",
+                    "geometry": "orthogonal"
+                },
+                4,
+                10
+            ],
+            "sections": [
+                {
+                    "title": "Les attendus",
+                    "id": 1,
+                    "type": "markdown",
+                    "URL": "typescript/attendus.md",
+                    "pages": [],
+                    "exercises": []
+                },
+                {
+                    "title": "Qu'est ce que Typescript ?",
+                    "id": 2,
+                    "type": "markdown",
+                    "URL": "typescript/whatIsTypescript.md",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "title": "Les types de bases",
+                            "type": "markdown",
+                            "URL": "typescript/types_de_bases.md"
+                        },
+                        {
+                            "id": 2,
+                            "title": "QCM JS / TS",
+                            "type": "exo",
+                            "URL": "typescript/ts_vs_js.exo.ts"
+                        }
+                    ],
+                    "exercises": []
+                },
+                {
+                    "id": 3,
+                    "title": "Les fonctions et leurs types",
+                    "type": "markdown",
+                    "URL": "typescript/fonctions_intro.md",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "title": "Exercice : Définition d'une fonction",
+                            "type": "exo",
+                            "URL": "typescript/definition_fonction.exo.ts"
+                        },
+                        {
+                            "id": 2,
+                            "title": "La notion de closure",
+                            "type": "markdown",
+                            "URL": "typescript/closure.md"
+                        }
+                    ],
+                    "exercises": []
+                },
+                {
+                    "id": 4,
+                    "title": "Les objets",
+                    "type": "markdown",
+                    "URL": "typescript/objets_classes_interfaces.md",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "title": "Exercice : Vecteur 2D",
+                            "type": "exo",
+                            "URL": "typescript/vecteur2D.exo.ts"
+                        },
+                        {
+                            "id": 2,
+                            "title": "La généricité",
+                            "type": "markdown",
+                            "URL": "typescript/genericite.md"
+                        },
+                        {
+                            "id": 3,
+                            "title": "Exercice : Objets et généricité",
+                            "type": "exo",
+                            "URL": "typescript/qcmGenericiteObjet.exo.ts"
+                        }
+                    ],
+                    "exercises": []
+                },
+                {
+                    "id": 5,
+                    "title": "Les types moins usuels",
+                    "type": "markdown",
+                    "URL": "typescript/types/introTypes.md",
+                    "pages": [
+                        {
+                            "id": 6,
+                            "title": "null et undefined",
+                            "type": "markdown",
+                            "URL": "typescript/types/nullUndef.md"
+                        },
+                        {
+                            "id": 2,
+                            "title": "Union et Intersection de types",
+                            "type": "markdown",
+                            "URL": "typescript/types/union_et_intersection.md"
+                        },
+                        {
+                            "id": 3,
+                            "title": "Les types littéraux",
+                            "type": "markdown",
+                            "URL": "typescript/types/litteraux.md"
+                        },
+                        {
+                            "id": 1,
+                            "title": "Le type never",
+                            "type": "markdown",
+                            "URL": "typescript/types/never.md"
+                        },
+                        {
+                            "id": 4,
+                            "title": "Les tuples",
+                            "type": "markdown",
+                            "URL": "typescript/types/tuples.md"
+                        },
+                        {
+                            "id": 5,
+                            "title": "QCM typage 1",
+                            "type": "exo",
+                            "URL": "typescript/types/qcm_typage_1/exo.ts"
+                        }
+                    ],
+                    "exercises": []
+                },
+                {
+                    "id": 7,
+                    "title": "Taleaux et fonctions d'ordre supérieur",
+                    "type": "markdown",
+                    "URL": "typescript/tableaux/intro.md",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "title": "La méthode map",
+                            "type": "markdown",
+                            "URL": "typescript/tableaux/map.md"
+                        },
+                        {
+                            "id": 2,
+                            "title": "Exercice map",
+                            "type": "exo",
+                            "URL": "typescript/tableaux/exoMap/exo.ts"
+                        },
+                        {
+                            "id": 3,
+                            "title": "La méthode filter",
+                            "type": "markdown",
+                            "URL": "typescript/tableaux/filter.md"
+                        },
+                        {
+                            "id": 4,
+                            "title": "QCM filter",
+                            "type": "exo",
+                            "URL": "typescript/tableaux/exoFilterQcm/exo.ts"
+                        },
+                        {
+                            "id": 5,
+                            "title": "Exercice filter",
+                            "type": "exo",
+                            "URL": "typescript/tableaux/exoFilterSB/exo.ts"
+                        },
+                        {
+                            "id": 6,
+                            "title": "La méthode reduce",
+                            "type": "markdown",
+                            "URL": "typescript/tableaux/reduce.md"
+                        },
+                        {
+                            "id": 7,
+                            "title": "Exercice reduce",
+                            "type": "exo",
+                            "URL": "typescript/tableaux/exoReduceSB/exo.ts"
+                        }
+                    ],
+                    "exercises": []
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Introduction à Typescript",
+            "type": "exo",
+            "coords": {
+                "x": 274,
+                "y": 44,
+                "width": 270,
+                "height": 159
+            },
+            "inputs": [
+                1
+            ],
+            "outputs": [
+                7
+            ],
+            "description": {
+                "type": "ghAssignement",
+                "assignement": {
+                    "id": 493404,
+                    "public_repo": false,
+                    "title": "Introduction à Typescript",
+                    "type": "individual",
+                    "invite_link": "https://classroom.github.com/a/Laad3NyW",
+                    "invitations_enabled": true,
+                    "slug": "introduction-typescript",
+                    "students_are_repo_admins": false,
+                    "feedback_pull_requests_enabled": true,
+                    "max_teams": null,
+                    "max_members": null,
+                    "editor": null,
+                    "accepted": 1,
+                    "submissions": 0,
+                    "passing": 0,
+                    "language": null,
+                    "deadline": null,
+                    "classroom": {
+                        "id": 177393,
+                        "name": "l3-miage-cl-ihm-classroom-2023-2024",
+                        "archived": false,
+                        "url": "https://classroom.github.com/classrooms/88937167-l3-miage-cl-ihm-classroom-2023-2024"
+                    }
+                },
+                "forumURL": "https://github.com/l3-miage-cl-ihm/ptf-cours-l3m-2023-2024/discussions"
+            }
+        },
+        {
+            "title": "Processus synchrone et asynchrone",
+            "type": "course",
+            "coords": {
+                "x": 490,
+                "y": 877,
+                "width": 561,
+                "height": 300
+            },
+            "inputs": [
+                4
+            ],
+            "outputs": [
+                5
+            ],
+            "sections": [
+                {
+                    "id": 1,
+                    "title": "Processus",
+                    "type": "markdown",
+                    "URL": "processus/intro.md",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "title": "Processus asynchrone",
+                            "type": "markdown",
+                            "URL": "processus/async.md"
+                        },
+                        {
+                            "id": 2,
+                            "title": "Dans le navigateur",
+                            "type": "markdown",
+                            "URL": "processus/browser.md"
+                        }
+                    ],
+                    "exercises": []
+                },
+                {
+                    "id": 3,
+                    "title": "Asynchronisme avec les callbacks",
+                    "type": "markdown",
+                    "URL": "processus/callbacks/intro.md",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "title": "Problèmes",
+                            "type": "markdown",
+                            "URL": "processus/callbacks/problems.md"
+                        },
+                        {
+                            "id": 2,
+                            "title": "StackBlitz 1 : mosaïque de callbacks de chats",
+                            "type": "exo",
+                            "URL": "processus/callbacks/sbChatsCB/exo.ts"
+                        }
+                    ],
+                    "exercises": []
+                },
+                {
+                    "id": 2,
+                    "title": "Asynchronisme avec les Promesses",
+                    "type": "markdown",
+                    "URL": "processus/promise/intro.md",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "title": "Création de promesses",
+                            "type": "markdown",
+                            "URL": "processus/promise/create.md"
+                        },
+                        {
+                            "id": 5,
+                            "title": "QCM création",
+                            "type": "exo",
+                            "URL": "processus/promise/qcmCreation/exo.ts"
+                        },
+                        {
+                            "id": 2,
+                            "title": "Chainage",
+                            "type": "markdown",
+                            "URL": "processus/promise/chainage.md"
+                        },
+                        {
+                            "id": 4,
+                            "title": "async et await",
+                            "type": "markdown",
+                            "URL": "processus/promise/asyncawait.md"
+                        },
+                        {
+                            "id": 6,
+                            "title": "QCM async/await",
+                            "type": "exo",
+                            "URL": "processus/promise/qcmAsync/exo.ts"
+                        },
+                        {
+                            "id": 3,
+                            "title": "StackBlitz 2-3: mosaïque de promesses de chats",
+                            "type": "exo",
+                            "URL": "processus/promise/sbChats/exo.ts"
+                        }
+                    ],
+                    "exercises": []
+                }
+            ],
+            "id": 3
+        },
+        {
+            "title": "Programmation événementielle",
+            "type": "course",
+            "coords": {
+                "x": 629,
+                "y": 578,
+                "width": 281,
+                "height": 196
+            },
+            "inputs": [
+                1
+            ],
+            "outputs": [
+                9,
+                3
+            ],
+            "sections": [
+                {
+                    "id": 1,
+                    "title": "La file d'événements",
+                    "type": "markdown",
+                    "URL": "progEvent/EventFIFO.md",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "title": "Description d'un événement",
+                            "type": "markdown",
+                            "URL": "progEvent/descriptionEvent.md"
+                        },
+                        {
+                            "id": 2,
+                            "title": "Abonnements",
+                            "type": "markdown",
+                            "URL": "progEvent/abonnement.md"
+                        },
+                        {
+                            "id": 3,
+                            "title": "Exercice abonnement",
+                            "type": "exo",
+                            "URL": "progEvent/exoAbo/exo.ts"
+                        }
+                    ],
+                    "exercises": []
+                },
+                {
+                    "id": 2,
+                    "title": "Propagation des événements",
+                    "type": "markdown",
+                    "URL": "progEvent/propagation.md",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "title": "addEventListener",
+                            "type": "markdown",
+                            "URL": "progEvent/addEventListener.md"
+                        },
+                        {
+                            "id": 2,
+                            "title": "Exercice 2",
+                            "type": "exo",
+                            "URL": "progEvent/AboDesabo/exo.ts"
+                        }
+                    ],
+                    "exercises": []
+                }
+            ],
+            "id": 4
+        },
+        {
+            "title": "Programmation réactive avancée",
+            "type": "course",
+            "coords": {
+                "x": 1504,
+                "y": 929,
+                "width": 382,
+                "height": 193
+            },
+            "inputs": [
+                3,
+                6
+            ],
+            "outputs": [
+                {
+                    "fromPlaceSide": "right",
+                    "toPlaceId": 14,
+                    "toPlaceSide": "bottom",
+                    "geometry": "curved"
+                }
+            ],
+            "sections": [
+                {
+                    "id": 3,
+                    "title": "Mise en œuvre avec les observablesRxJS",
+                    "type": "markdown",
+                    "URL": "progReactive/rxjs/intro.md",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "title": "Observables chaud et froids",
+                            "type": "markdown",
+                            "URL": "progReactive/rxjs/obsSubjBS.md"
+                        },
+                        {
+                            "id": 2,
+                            "title": "Dériver des observables",
+                            "type": "markdown",
+                            "URL": "progReactive/rxjs/pipe.md"
+                        },
+                        {
+                            "id": 9,
+                            "title": "Différences entre signaux et observables",
+                            "type": "markdown",
+                            "URL": "progReactive/rxjs/diff_signaux_observables.md"
+                        },
+                        {
+                            "id": 4,
+                            "title": "Exercices : Chronomètre signaux vs observables",
+                            "type": "exo",
+                            "URL": "progReactive/rxjs/sbInit/exo.ts"
+                        },
+                        {
+                            "id": 6,
+                            "title": "Lien avec les signaux et les promesses",
+                            "type": "markdown",
+                            "URL": "progReactive/rxjs/signauxEtPromesse.md"
+                        },
+                        {
+                            "id": 8,
+                            "title": "Plus loin avec les observables chauds et froids",
+                            "type": "markdown",
+                            "URL": "progReactive/rxjs/hot_cold.md"
+                        },
+                        {
+                            "id": 7,
+                            "title": "Exercice : File d'appels paramétrable",
+                            "type": "exo",
+                            "URL": "progReactive/rxjs/fileAppels/exo.ts"
+                        }
+                    ],
+                    "exercises": []
+                }
+            ],
+            "id": 5
+        },
+        {
+            "title": "Angular : Architecture",
+            "type": "course",
+            "coords": {
+                "x": 1518,
+                "y": 527,
+                "width": 352,
+                "height": 238
+            },
+            "inputs": [
+                9
+            ],
+            "outputs": [
+                5,
+                17
+            ],
+            "sections": [
+                {
+                    "id": 1,
+                    "title": "Architecture pour les systèmes interactifs",
+                    "type": "markdown",
+                    "URL": "archi/intro.md",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "title": "MVC et MVP",
+                            "type": "markdown",
+                            "URL": "archi/mvc.md"
+                        },
+                        {
+                            "id": 2,
+                            "title": "Liens avec le patron observateur/observable",
+                            "type": "markdown",
+                            "URL": "archi/lienObs.md"
+                        },
+                        {
+                            "id": 4,
+                            "title": "MVVM",
+                            "type": "markdown",
+                            "URL": "archi/mvvm.md"
+                        },
+                        {
+                            "id": 3,
+                            "title": "QCM",
+                            "type": "exo",
+                            "URL": "archi/qcmArchi/exo.ts"
+                        }
+                    ],
+                    "exercises": []
+                },
+                {
+                    "id": 5,
+                    "title": "Entrées et Sorties des composants",
+                    "type": "markdown",
+                    "URL": "angular/ES/intro.md",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "title": "Définir et utiliser une entrée",
+                            "type": "markdown",
+                            "URL": "angular/ES/input.md"
+                        },
+                        {
+                            "id": 2,
+                            "title": "Définir et utiliser une sortie",
+                            "type": "markdown",
+                            "URL": "angular/ES/output.md"
+                        },
+                        {
+                            "id": 3,
+                            "title": "Bien définir son composant",
+                            "type": "markdown",
+                            "URL": "angular/ES/bienDefinirCompo.md"
+                        },
+                        {
+                            "id": 4,
+                            "title": "QCM E/S",
+                            "type": "exo",
+                            "URL": "angular/ES/qcmES/exo.ts"
+                        }
+                    ],
+                    "exercises": []
+                }
+            ],
+            "id": 6
+        },
+        {
+            "title": "Introduction aux signaux",
+            "type": "exo",
+            "coords": {
+                "x": 604,
+                "y": 39,
+                "width": 334,
+                "height": 168
+            },
+            "inputs": [
+                10,
+                2
+            ],
+            "outputs": [
+                11
+            ],
+            "id": 7,
+            "description": {
+                "type": "ghAssignement",
+                "assignement": {
+                    "id": 500250,
+                    "public_repo": false,
+                    "title": "Introduction aux signaux",
+                    "type": "individual",
+                    "invite_link": "https://classroom.github.com/a/gRbDN8eh",
+                    "invitations_enabled": true,
+                    "slug": "introduction-aux-signaux",
+                    "students_are_repo_admins": true,
+                    "feedback_pull_requests_enabled": true,
+                    "max_teams": null,
+                    "max_members": null,
+                    "editor": "vscode",
+                    "accepted": 0,
+                    "submissions": 0,
+                    "passing": 0,
+                    "language": null,
+                    "deadline": null,
+                    "classroom": {
+                        "id": 177393,
+                        "name": "l3-miage-cl-ihm-classroom-2023-2024",
+                        "archived": false,
+                        "url": "https://classroom.github.com/classrooms/88937167-l3-miage-cl-ihm-classroom-2023-2024"
+                    }
+                },
+                "forumURL": "https://github.com/l3-miage-cl-ihm/ptf-cours-l3m-2023-2024/discussions"
+            }
+        },
+        {
+            "title": "Typescript avancé",
+            "type": "course",
+            "coords": {
+                "x": 800,
+                "y": -189,
+                "width": 303,
+                "height": 144
+            },
+            "inputs": [
+                1
+            ],
+            "outputs": [
+                {
+                    "fromPlaceSide": "right",
+                    "toPlaceId": 12,
+                    "toPlaceSide": "top",
+                    "geometry": "orthogonal"
+                },
+                {
+                    "fromPlaceSide": "right",
+                    "toPlaceId": 11,
+                    "toPlaceSide": "top",
+                    "geometry": "orthogonal"
+                }
+            ],
+            "sections": [
+                {
+                    "id": 1,
+                    "title": "Opérations sur les types",
+                    "type": "markdown",
+                    "URL": "typescript/types/operations.md",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "title": "Accesseur de type",
+                            "type": "markdown",
+                            "URL": "typescript/types/obtenirTypes.md"
+                        },
+                        {
+                            "id": 2,
+                            "title": "Opérateur keyof",
+                            "type": "markdown",
+                            "URL": "typescript/types/keyof.md"
+                        },
+                        {
+                            "id": 3,
+                            "title": "Types conditionnels",
+                            "type": "markdown",
+                            "URL": "typescript/types/conditionnel.md"
+                        },
+                        {
+                            "id": 4,
+                            "title": "Types mappés",
+                            "type": "markdown",
+                            "URL": "typescript/types/mapped.md"
+                        }
+                    ],
+                    "exercises": []
+                }
+            ],
+            "id": 8
+        },
+        {
+            "title": "Angular basique",
+            "type": "course",
+            "coords": {
+                "x": 1056,
+                "y": 359,
+                "width": 313,
+                "height": 352
+            },
+            "inputs": [
+                10,
+                4
+            ],
+            "outputs": [
+                11,
+                {
+                    "fromPlaceSide": "right",
+                    "toPlaceId": 6,
+                    "toPlaceSide": "left",
+                    "geometry": "straight"
+                }
+            ],
+            "sections": [
+                {
+                    "id": 2,
+                    "title": "Qu'est ce qu'Angular ?",
+                    "type": "markdown",
+                    "URL": "angular/angular.md",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "title": "Historique d'Angular",
+                            "type": "markdown",
+                            "URL": "angular/historique.md"
+                        },
+                        {
+                            "id": 2,
+                            "title": "La notion de composant",
+                            "type": "markdown",
+                            "URL": "angular/composant.md"
+                        },
+                        {
+                            "id": 3,
+                            "title": "QCM Angular niveau 1",
+                            "type": "exo",
+                            "URL": "angular/exoComposant/exo.ts"
+                        }
+                    ],
+                    "exercises": []
+                },
+                {
+                    "id": 1,
+                    "title": "Data-binding",
+                    "type": "markdown",
+                    "URL": "angular/dataBinding/intro.md",
+                    "pages": [
+                        {
+                            "id": 7,
+                            "title": "Exercice : Prise en main",
+                            "type": "exo",
+                            "URL": "angular/dataBinding/priseEnMain/exo.ts"
+                        },
+                        {
+                            "id": 3,
+                            "title": "Data binding sur l'attribut class",
+                            "type": "markdown",
+                            "URL": "angular/dataBinding/class.md"
+                        },
+                        {
+                            "id": 4,
+                            "title": "Data binding sur l'attribut style",
+                            "type": "markdown",
+                            "URL": "angular/dataBinding/style.md"
+                        },
+                        {
+                            "id": 9,
+                            "title": "Le cas des formulaires",
+                            "type": "markdown",
+                            "URL": "angular/dataBinding/forms.md"
+                        },
+                        {
+                            "id": 6,
+                            "title": "Directives structurelles",
+                            "type": "markdown",
+                            "URL": "angular/dataBinding/structural.md"
+                        },
+                        {
+                            "id": 5,
+                            "title": "Data-binding interne à la vue",
+                            "type": "markdown",
+                            "URL": "angular/dataBinding/refInterne.md"
+                        },
+                        {
+                            "id": 8,
+                            "title": "Exercice: Tableau HTML",
+                            "type": "exo",
+                            "URL": "angular/dataBinding/exoTableau/exo.ts"
+                        }
+                    ],
+                    "exercises": []
+                },
+                {
+                    "id": 3,
+                    "title": "Les services",
+                    "type": "markdown",
+                    "URL": "angular/service/intro.md",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "title": "Injection de dépendance",
+                            "type": "markdown",
+                            "URL": "angular/service/injection.md"
+                        },
+                        {
+                            "id": 3,
+                            "title": "Un exemple",
+                            "type": "markdown",
+                            "URL": "angular/service/exemple.md"
+                        },
+                        {
+                            "id": 2,
+                            "title": "QCM ?",
+                            "type": "exo",
+                            "URL": "angular/service/qcmService/exo.ts"
+                        }
+                    ],
+                    "exercises": []
+                }
+            ],
+            "id": 9
+        },
+        {
+            "title": "Introduction à la programmation réactive",
+            "type": "course",
+            "coords": {
+                "x": 631,
+                "y": 289,
+                "width": 281,
+                "height": 242
+            },
+            "inputs": [
+                1
+            ],
+            "outputs": [
+                9,
+                7
+            ],
+            "sections": [
+                {
+                    "id": 1,
+                    "title": "Principe",
+                    "type": "markdown",
+                    "URL": "progReactive/principe.md",
+                    "pages": [
+                        {
+                            "id": 3,
+                            "title": "Patron observateur/observables",
+                            "type": "markdown",
+                            "URL": "progReactive/observer.md"
+                        },
+                        {
+                            "id": 1,
+                            "title": "Cas d'usages",
+                            "type": "markdown",
+                            "URL": "progReactive/usages.md"
+                        },
+                        {
+                            "id": 2,
+                            "title": "QCM programmation réactive",
+                            "type": "exo",
+                            "URL": "progReactive/exoPR/exo.ts"
+                        }
+                    ],
+                    "exercises": []
+                },
+                {
+                    "id": 2,
+                    "title": "Mise en œuvre avec les signaux",
+                    "type": "markdown",
+                    "URL": "progReactive/signal/intro.md",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "title": "Signal",
+                            "type": "markdown",
+                            "URL": "progReactive/signal/signal.md"
+                        },
+                        {
+                            "id": 2,
+                            "title": "Signal dérivé",
+                            "type": "markdown",
+                            "URL": "progReactive/signal/computed.md"
+                        },
+                        {
+                            "id": 3,
+                            "title": "Effet",
+                            "type": "markdown",
+                            "URL": "progReactive/signal/effect.md"
+                        },
+                        {
+                            "id": 4,
+                            "title": "Exercice : graphe de dépendance",
+                            "type": "exo",
+                            "URL": "progReactive/signal/qcmSignal/exo.ts"
+                        }
+                    ],
+                    "exercises": []
+                }
+            ],
+            "id": 10
+        },
+        {
+            "title": "Reversi en Angular",
+            "type": "exo",
+            "coords": {
+                "x": 1051,
+                "y": 42,
+                "width": 322,
+                "height": 162
+            },
+            "inputs": [
+                9,
+                7,
+                8
+            ],
+            "outputs": [
+                12
+            ],
+            "id": 11,
+            "description": {
+                "type": "ghAssignement",
+                "assignement": {
+                    "id": 509330,
+                    "public_repo": false,
+                    "title": "Reversi en Angular",
+                    "type": "individual",
+                    "invite_link": "https://classroom.github.com/a/HGYHPBj5",
+                    "invitations_enabled": true,
+                    "slug": "reversi-en-angular",
+                    "students_are_repo_admins": true,
+                    "feedback_pull_requests_enabled": true,
+                    "max_teams": null,
+                    "max_members": null,
+                    "editor": "vscode",
+                    "accepted": 0,
+                    "submissions": 0,
+                    "passing": 0,
+                    "language": null,
+                    "deadline": null,
+                    "classroom": {
+                        "id": 177393,
+                        "name": "l3-miage-cl-ihm-classroom-2023-2024",
+                        "archived": false,
+                        "url": "https://classroom.github.com/classrooms/88937167-l3-miage-cl-ihm-classroom-2023-2024"
+                    }
+                },
+                "forumURL": "https://github.com/l3-miage-cl-ihm/ptf-cours-l3m-2023-2024/discussions"
+            }
+        },
+        {
+            "title": "Gestion de matrices : L3 Miage 2023-2024",
+            "type": "exo",
+            "coords": {
+                "x": 1580,
+                "y": 28,
+                "width": 226,
+                "height": 188
+            },
+            "inputs": [
+                11,
+                8,
+                17
+            ],
+            "outputs": [
+                {
+                    "fromPlaceSide": "right",
+                    "toPlaceId": 14,
+                    "toPlaceSide": "top",
+                    "geometry": "curved"
+                }
+            ],
+            "id": 12,
+            "description": {
+                "type": "ghAssignement",
+                "assignement": {
+                    "id": 498596,
+                    "public_repo": false,
+                    "title": "Gestion de matrices : L3 Miage 2023-2024",
+                    "type": "individual",
+                    "invite_link": "https://classroom.github.com/a/RGMSRJVj",
+                    "invitations_enabled": true,
+                    "slug": "gestion-de-matrices-l3-miage-2023-2024",
+                    "students_are_repo_admins": true,
+                    "feedback_pull_requests_enabled": true,
+                    "max_teams": null,
+                    "max_members": null,
+                    "editor": "vscode",
+                    "accepted": 0,
+                    "submissions": 0,
+                    "passing": 0,
+                    "language": null,
+                    "deadline": null,
+                    "classroom": {
+                        "id": 177393,
+                        "name": "l3-miage-cl-ihm-classroom-2023-2024",
+                        "archived": false,
+                        "url": "https://classroom.github.com/classrooms/88937167-l3-miage-cl-ihm-classroom-2023-2024"
+                    }
+                },
+                "forumURL": "https://github.com/l3-miage-cl-ihm/ptf-cours-l3m-2023-2024/discussions"
+            }
+        },
+        {
+            "title": "Point de départ",
+            "type": "course",
+            "coords": {
+                "x": -228,
+                "y": 246,
+                "width": 181,
+                "height": 170
+            },
+            "inputs": [],
+            "outputs": [
+                1
+            ],
+            "sections": [
+                {
+                    "id": 1,
+                    "title": "Objectifs du cours",
+                    "type": "markdown",
+                    "URL": "_intro/objectifs.md",
+                    "pages": [
+                        {
+                            "id": 1,
+                            "title": "Prérequis",
+                            "type": "markdown",
+                            "URL": "_intro/prerequis.md"
+                        },
+                        {
+                            "id": 3,
+                            "title": "Comptes à créer",
+                            "type": "markdown",
+                            "URL": "_intro/comptes.md"
+                        },
+                        {
+                            "id": 2,
+                            "title": "Liens",
+                            "type": "markdown",
+                            "URL": "_intro/liens.md"
+                        }
+                    ],
+                    "exercises": []
+                }
+            ],
+            "id": 13
+        },
+        {
+            "title": "TodoList en Angular RxJS",
+            "type": "exo",
+            "coords": {
+                "x": 1988,
+                "y": 404,
+                "width": 320,
+                "height": 240
+            },
+            "inputs": [
+                12,
+                5
+            ],
+            "outputs": [],
+            "id": 14,
+            "description": {
+                "type": "ghAssignement",
+                "assignement": {
+                    "id": 510376,
+                    "public_repo": false,
+                    "title": "TodoList en Angular RxJS",
+                    "type": "individual",
+                    "invite_link": "https://classroom.github.com/a/VzTqJeQS",
+                    "invitations_enabled": true,
+                    "slug": "todolist-en-angular-rxjs",
+                    "students_are_repo_admins": true,
+                    "feedback_pull_requests_enabled": true,
+                    "max_teams": null,
+                    "max_members": null,
+                    "editor": "vscode",
+                    "accepted": 0,
+                    "submissions": 0,
+                    "passing": 0,
+                    "language": null,
+                    "deadline": null,
+                    "classroom": {
+                        "id": 177393,
+                        "name": "l3-miage-cl-ihm-classroom-2023-2024",
+                        "archived": false,
+                        "url": "https://classroom.github.com/classrooms/88937167-l3-miage-cl-ihm-classroom-2023-2024"
+                    }
+                },
+                "forumURL": "https://github.com/l3-miage-cl-ihm/ptf-cours-l3m-2023-2024/discussions"
+            }
+        },
+        {
+            "title": "E/S de composants Angular",
+            "type": "exo",
+            "coords": {
+                "x": 1581,
+                "y": 304,
+                "width": 227,
+                "height": 170
+            },
+            "inputs": [
+                6
+            ],
+            "outputs": [
+                12
+            ],
+            "id": 17,
+            "description": {
+                "type": "ghAssignement",
+                "assignement": {
+                    "id": 501857,
+                    "public_repo": false,
+                    "title": "E/S de composants Angular",
+                    "type": "individual",
+                    "invite_link": "https://classroom.github.com/a/tNeyLUQZ",
+                    "invitations_enabled": true,
+                    "slug": "e-s-de-composants-angular",
+                    "students_are_repo_admins": true,
+                    "feedback_pull_requests_enabled": true,
+                    "max_teams": null,
+                    "max_members": null,
+                    "editor": "vscode",
+                    "accepted": 0,
+                    "submissions": 0,
+                    "passing": 0,
+                    "language": null,
+                    "deadline": null,
+                    "classroom": {
+                        "id": 177393,
+                        "name": "l3-miage-cl-ihm-classroom-2023-2024",
+                        "archived": false,
+                        "url": "https://classroom.github.com/classrooms/88937167-l3-miage-cl-ihm-classroom-2023-2024"
+                    }
+                },
+                "forumURL": "https://github.com/l3-miage-cl-ihm/ptf-cours-l3m-2023-2024/discussions"
+            }
+        }
+    ]
+}
