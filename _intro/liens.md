@@ -21,9 +21,14 @@ Cette section sera mise à jour au fur et à mesure du cours, n'hésitez pas à 
   * [Les signaux Angular](https://angular.io/guide/signals)
   * [Le future site de référence d'Angular](https://angular.dev/)
 
-Arréter de regarder des tutoriels : [https://www.youtube.com/watch?v=KMUgTKB0OaE](https://www.youtube.com/watch?v=KMUgTKB0OaE)
+Arréter de regarder des tutoriels :
 
+* Version courte : [https://www.youtube.com/shorts/-PEniiXgDqw](https://www.youtube.com/shorts/-PEniiXgDqw)
+* Version longue : [https://www.youtube.com/watch?v=KMUgTKB0OaE](https://www.youtube.com/watch?v=KMUgTKB0OaE)
+
+<!--
 <iframe width="560" height="315" src="https://www.youtube.com/embed/49ybR6cxaUM?si=SdnLQhEPwaupfbjO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+-->
 
 <!-- Liens :
 éditeur de graphe : https://edotor.net/
