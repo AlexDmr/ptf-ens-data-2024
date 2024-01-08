@@ -1,6 +1,6 @@
 # Un exemple de service et d'injection
 
-Nous allons discuter d'un StackBlitz ([https://stackblitz.com/edit/ptf-ens-l3m-angular-service-exemple](https://stackblitz.com/edit/ptf-ens-l3m-angular-service-exemple?file=src%2Fapp.component.html,src%2Fapp.component.scss,src%2Fexemple.service.ts,src%2Fmain.ts)) qui met en oeuvre un service simple permettant d'obtenir des informations sur la série ***Game of Thrones***. Ce service nosu sert à encapsuler les appels à la Web API [Game Of Thrones Quotes API](https://gameofthronesquotes.xyz/).
+Nous allons discuter d'un StackBlitz ([https://stackblitz.com/edit/ptf-ens-l3m-angular-service-exemple](https://stackblitz.com/edit/ptf-ens-l3m-angular-service-exemple?file=src%2Fapp.component.html,src%2Fapp.component.scss,src%2Fexemple.service.ts,src%2Fmain.ts)) qui met en oeuvre un service simple permettant d'obtenir des informations sur la série ***Game of Thrones***. Ce service nous sert à encapsuler les appels à la Web API [Game Of Thrones Quotes API](https://gameofthronesquotes.xyz/).
 
 Le service est d'abord déclaré comme injectable au niveau de la racine de l'application :
 
