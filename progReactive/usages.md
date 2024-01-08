@@ -1,6 +1,6 @@
 # Quelques cas d'usage
 
-Nous discutons dans cette section de quelques cas d'usage du patron de cnception observateur/observable ainsi que de la programmation réactive.
+Nous discutons dans cette section de quelques cas d'usage du patron de conception observateur/observable ainsi que de la programmation réactive.
 
 ## Mise en oeuvre du patron de conception Observateur/Observable
 
