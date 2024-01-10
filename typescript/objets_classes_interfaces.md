@@ -46,7 +46,7 @@ En ajoutant des méthodes à l'interface, il devient difficile et déconseillé 
 ```typescript
 const pt: POINT = {
     x: 2,
-    y; 4,
+    y: 4,
     translate(dx: number, dy: number): Point {
         return {x: this.x + dx, y: this.y + dy};
     }
