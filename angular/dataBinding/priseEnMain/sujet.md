@@ -11,4 +11,7 @@ Instructions :
 * Ajoutez une balise pre qui affichera les valeur du signal log au format JSON.
 * Abonnez-vous au chargement de l'image, publiez via le signal log le lieu correspondant à l'image qui vient de se charger
 
+Exemple de résultat attendu :
+<iframe src="https://alexdmr.github.io/ptf-ens-l3m-angular-exo-base/" style="width: 640px; height:320px; border: solid black 2px;"></iframe>
+
 **Pensez bien à enregistrer l'adresse de votre fork ci-dessous.**
