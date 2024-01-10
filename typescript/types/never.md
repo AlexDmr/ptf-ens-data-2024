@@ -8,7 +8,7 @@ function ohNo(): never {
     throw "Oh no !"
 }
 
-console.log("on passer ici...")
+console.log("on passe ici...")
 ohNo();
 // Le compilateur détecte que ce code est mort car throwException renvoie never
 console.log("...mais jamais là")
