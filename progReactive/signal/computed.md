@@ -13,7 +13,7 @@ Un signal dérivé est définie par un appel à la fonction `computed<T>( () => 
 const a = signal<number>( 42 );
 const n = signal<string>( "Bob" );
 
-const p = computed<Person>( () => ({ name: sigName(), age: sigAge() }) );
+const p = computed<Person>( () => ({ name: n(), age: a() }) );
 console.log( p() ); // { name: "Bob", age: 42 }
 
 a.set( 24 );
