@@ -54,11 +54,11 @@ const Lp = computed<readonly Person[]>( () => {
 
 console.log( Lp() ); // [ { name: "Alice", age: 24 }, { name: "Alice", age: 24 }, { name: "Alice", age: 24 } ]
 
-p.update( p => ({ ...p, age: p.age + 1 }) );
-console.log( Lp() ); // [ { name: "Alice", age: 25 }, { name: "Alice", age: 25 }, { name: "Alice", age: 25 } ]
+a.update( age => 2 * age + 1 );
+console.log( Lp() ); // [ { name: "Alice", age: 49 }, { name: "Alice", age: 49 }, { name: "Alice", age: 49 } ]
 
 nb.set( 2 );
-console.log( Lp() ); // [ { name: "Alice", age: 25 }, { name: "Alice", age: 25 } ]
+console.log( Lp() ); // [ { name: "Alice", age: 49 }, { name: "Alice", age: 49 } ]
 ```
 
 Avec le graphe de dépendance suivant :
