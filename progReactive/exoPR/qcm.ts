@@ -1,7 +1,7 @@
 import { STRQCM } from "src/app/data/QCM";
 
 export const qcm: STRQCM = `
-NOK : La programmation réactive et un autre nom du patron de conception observateur/observable.
+NOK : La programmation réactive est un autre nom du patron de conception observateur/observable.
  OK : La programmation réactive utilise le patron de conception observateur/observable.
 NOK : Le patron de conception observateur/observable utilise la programmation réactive.
  OK : Après l'étape 1, c vaut [3, 3]
