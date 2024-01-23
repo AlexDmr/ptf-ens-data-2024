@@ -7,5 +7,5 @@ Tous les événements ne sont pas issus d'une action de l'utilisateur, le systè
 Lorsque le système produit un événement, il est inséré dans une file. Les événements sont traités au fur et à mesure, c'est-à-dire que pour chaque événement sorti de la file, le système « prévient » les parties de code qui sont intéressées par celui-ci. La figure suivante illustre cette file. Les événements sont enfilés dans l'ordre de leur production par différentes sources (clavier, souris, système de chargement d'image, de vidéo, etc.). Un module de traitement est chargé de défiler les événements et d'exécuter les parties de code « intéressées ».
 
 <div style = "text-align: center; margin: auto;">
-    <img src   = "local://assets/progEvent/EventFIFO.png" style="max-width: 700px;"/>
+    <img src   = "local://assets/progEvent/EventFIFO.png" style="max-width: min(700px, 100%);"/>
 </div>

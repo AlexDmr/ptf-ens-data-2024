@@ -4,7 +4,7 @@ Dans Angular, un service est simplement définit par une classe Typescript. On p
 
 Un service est donc déclaré dans un certain contexte (l'application, un module, un composant). Angular va s'assurer que chaque composant de ce même contexte aura accès à la même instance du service. On dit que cette instance est un ***singleton*** (dans le cadre du contexte où il est définit). Cela signifie que si un composant modifie une propriété du service, alors tous les autres composants verront cette modification.
 
-Notons qu'il est possible d'avoir plusieurs instances d'un même service, assiciées à des contextes différents (ex: une pour l'application, une pour un module, une autre pour un composant). Angular fournira la bonne instance en fonction du contexte.
+Notons qu'il est possible d'avoir plusieurs instances d'un même service, associées à des contextes différents (ex: une pour l'application, une pour un module, une autre pour un composant). Angular fournira la bonne instance en fonction du contexte.
 
 ## Quand utiliser un service ?
 

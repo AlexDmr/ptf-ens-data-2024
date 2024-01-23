@@ -68,7 +68,7 @@ readonly selectedHouse: GOTService['selectedHouse'];
 ```
 
 Nous utilisons ces attributs dans le template du composant.
-Dans ce même template, nous définissons des boutons pour sélectionner une maiso et en avoir les détails. Cesboutons font appel à la méthode `select` du composant `AppComponent` qui fait un appel à la méthode `select` du service `GOTService` :
+Dans ce même template, nous définissons des boutons pour sélectionner une maison et en avoir les détails. Ces boutons font appel à la méthode `select` du composant `AppComponent` qui fait un appel à la méthode `select` du service `GOTService` :
 
 ```typescript
 select(h: House<Member>) {

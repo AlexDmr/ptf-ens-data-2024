@@ -2,7 +2,7 @@
 
 Il est possible de spécifier des références à des balises dans la ***Vue***. Cela se fait en ajoutant un attribut préfixé par le caractère **#** dans la balise correspondante. Le nom correspond alors à une variable interne à la vue qui désigne la balise et est utilisable comme telle.
 
-Dans l'exemple suivant, la balise input contient un attribut **#lab**, cela revient à déclarer dans la vue une variable lab qui est utilisable là où la balise input est définie. Ainsi, il est possible de demander la valeur contenue dans la balise input dans l'abonnement à la soumission du formulaire (***lab.value***) puisque ***value*** est bien un attribut des balises input (Reqmaruqe, on ajoute un attribut name simplement pour être conforme aux spécifications HTML, la valeur de cet attribut peut être quelconque dans le cas présent).
+Dans l'exemple suivant, la balise input contient un attribut **#lab**, cela revient à déclarer dans la vue une variable lab qui est utilisable là où la balise input est définie. Ainsi, il est possible de demander la valeur contenue dans la balise input dans l'abonnement à la soumission du formulaire (***lab.value***) puisque ***value*** est bien un attribut des balises input (Remarque, on ajoute un attribut name simplement pour être conforme aux spécifications HTML, la valeur de cet attribut peut être quelconque dans le cas présent).
 
 ```html
 <form (submit) = "F(lab.value)">

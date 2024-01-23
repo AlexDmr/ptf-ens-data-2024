@@ -2,7 +2,7 @@
 
 L'attribut class des balises HTML est souvent utilisé pour définir le style d'une balise. Angular permet de lier la valeur de cet attribut à une expression calculée par rapport aux données de la ***vue-modèle*** (voir [la documentation](https://angular.io/guide/attribute-binding)).
 
-Il existe plusierus façon de lier tout ou partie des classes CSS d'une balise HTML à une expression calculée par rapport à la ***vue-modèle***. Nous présentons les principales ci-dessous.
+Il existe plusieurs façon de lier tout ou partie des classes CSS d'une balise HTML à une expression calculée par rapport à la ***vue-modèle***. Nous présentons les principales ci-dessous.
 
 ## Liaison d'une classe CSS xxx particulière avec [class.xxx]
 Il peut être souvent pratique d'ajouter ou de retirer une classe CSS à une balise en fonction d'une condition.
@@ -22,6 +22,7 @@ Dans l'exemple ci-dessous, la classe CSS `formidable` est ajoutée si et seuleme
 ## Liaison d'un ensemble de classes CSS avec [class]
 Angular permet d'affecter plusieurs classes CSS à une balise en utilisant l'attribut [class].
 L'expression associée à cet attribut peut alors être :
+
 * une chaîne de caractères contenant les noms des classes CSS séparés par des espaces
 * un tableau de string contenant les noms des classes CSS
 * un objet dont les clefs sont les classes et les valeurs des booléens, la classe CSS étant ajoutée ou retirée en fonction de la valeur booléenne qui lui est associée.
