@@ -35,7 +35,6 @@ Cette vue définie une div qui contient deux spans. Le premier affiche la valeur
 </div>
 ```
 
-
 ## La vue-modèle
 
 La vue-modèle est définie par une classe. C'est dans cette classe qu'on va définir les données et les méthodes qui seront utilisées par la vue. Dans l'exemple ci-dessous, on définit une classe ***AppComponent*** qui contient un attribut ***temp*** de type ***Signal&lt;number&gt;*** et une méthode ***updateTemp*** qui met à jour le signal ***temp***.

@@ -1,5 +1,8 @@
 # Définir des types conditionnels
-Il est possible de définir des types conditionnels, c'est à dire des types qui dépendent d'une condition. On peut utiliser cela lors de la définition de types génériques.
+
+# Définir des types conditionnels
+
+Il est possible de définir des types conditionnels, c'est-à-dire des types qui dépendent d'une condition. On peut utiliser cela lors de la définition de types génériques.
 
 ```typescript
 interface Point {
@@ -24,7 +27,8 @@ const pt3d: AppendAttrToPoint<'z', number> = {
 }
 ```
 
-On peut aussi poser des condition sous la forme d'expressions ternaires.
+On peut aussi poser des conditions sous la forme d'expressions ternaires.
+
 ```typescript
 type Description<T> = T extends boolean ? {type: "un booléen"}
                                         : T extends number ? {type: "un nombre"}
@@ -39,7 +43,8 @@ b = {type: "un booléen"}   // pas OK
 b = {type: "un nombre"}    // pas OK
 ```
 
-On peut utiliser ces expressions ternaire pour "applatir" un tableau par exemple.
+On peut utiliser ces expressions ternaires pour "aplatir" un tableau par exemple.
+
 ```typescript
 type Flatten<T> = T extends any[] ? T[number] : T;
 
@@ -47,14 +52,16 @@ const L: number[] = [1, 2, 3];
 const e: Flatten<typeof L> = 3;
 ```
 
-Dans la même veine, on peut imaginer un DeepFlatten qui sera défini par un type récursif à base e ternaire.
+Dans la même veine, on peut imaginer un DeepFlatten qui sera défini par un type récursif à base de ternaire.
+
 ```typescript
 type DeepFlatten<T> = T extends unknown[] ? DeepFlatten<T[number]> : T;
 
 const e2: DeepFlatten< number[][][][] > = 65;
 ```
 
-Enfin, il est possible de demander d'inférer des types dans un bloc extends. Cela permet par exemple de ré-écrire DeepFlatten comme suit :
+nfin, il est possible de demander d'inférer des types dans un bloc extends. Cela permet, par exemple, de ré-écrire DeepFlatten comme suit :
+
 ```typescript
 type DeepFlatten<T> = T extends (infer U)[] ? DeepFlatten<U> : T;
 

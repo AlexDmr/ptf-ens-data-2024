@@ -1,4 +1,5 @@
 # Obtenir le type des attributs d'un type objet avec keyof
+
 L'opérateur keyof s'applique à des types objets, il renvoie l'union des attributs de l'objet en question.
 
 ```typescript	
@@ -15,6 +16,7 @@ a = 'z' // Pas OK
 ```
 
 Les tableau étant des objets particulier, on peut utiliser keyof avec les types tableau.
+
 ```typescript
 type AttTabNumber = keyof number[];
 let z: AttTabNumber;
