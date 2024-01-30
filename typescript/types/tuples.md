@@ -1,5 +1,6 @@
 # Les tuples
-Les tuples sont des tableaux de taille fixe dont les éléments peuvent être de types différents. Chaque élément d'un tuple a un type précis. Cela permet au compilateur de vérifier qu'on accède a un index existant dans le tuple.
+
+Les tuples sont des tableaux de taille fixe dont les éléments peuvent être de types différents. Chaque élément d'un tuple a un type précis, ce qui permet au compilateur de vérifier l'accès à un index existant dans le tuple.
 
 ```typescript
 type DATA = [string, number, boolean];
@@ -8,9 +9,9 @@ const p: DATA = ['', 0, false];
 p[3]; // Erreur, le tuple DATA n a pas d element a l index 3.
 ```
 
-Il est possible de nommer les index d'un type tuple, afin de rendre les choses plus lisibles pour le programmeur.
+Il est possible de nommer les indices d'un type tuple afin de rendre les choses plus lisibles pour le programmeur.
 
-**Il est à noter que les tuples peuvent être mis en correspondance avec la liste des paramètres d'une fonction**. La liste des paramètres d'une fonction est, en effet, un tuple dont les membres sont nommés.
+**À noter que les tuples peuvent être mis en correspondance avec la liste des paramètres d'une fonction.** En effet, la liste des paramètres d'une fonction est un tuple dont les membres sont nommés.
 
 ```typescript
 type monTupleNamed = [age: number, forneame: string, name: string, birthday: Date];
@@ -23,6 +24,7 @@ const rec3: monTupleNamed = F(...rec1);
 ```
 
 Autre exemple
+
 ```typescript
 interface Point {
     readonly x: number;
