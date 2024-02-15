@@ -32,7 +32,7 @@ Un observable RxJS est bien un observable au sens du patron de conception Observ
 L'abonnement se fait à l'aide de la méthode **`subscribe`** qui prend en paramètres, de façon optionnel, un **`Partial<Observer<T>>`** ou une simple fonction de type **`(value: T) => void`**. La fonction subscribe renvoie comme valeur de retour un objet de type **``Subscription``** qui permet ensuite de se désabonner.
 
 ```typescript
-export interface Observer<T> {
+export interface Observable<T> {
   ...
   subscribe(observerOrNext?: Partial<Observer<T>> | ((value: T) => void)): Subscription;
 }
