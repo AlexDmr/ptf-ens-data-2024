@@ -4,11 +4,11 @@ Le coeur de la puissance de RxJS est de permettre de dériver et de combiner des
 
 ## La méthode pipe
 
-La méthode **`pipe`** permet de dériver un observable en un autre observable. Elle prend en paramètre une liste d'opérateurs pipable. Un opérateur pipable est une fonction qui prend en paramètre un observable et renvoie un observable. Vous pouvez vous rendre sur [la documentation dédiée aux opérateurs](https://rxjs.dev/guide/operators#categories-of-operators) pour avoir une idée du nombre d'opérateurs existants. Quelques exemples proches de concepts que vous connaissez déjà :
+La méthode **`pipe`** permet de dériver un observable en un autre observable. Elle prend en paramètre une liste d'opérateurs pipables. Un opérateur pipable est une fonction qui prend en paramètre un observable et renvoie un observable. Vous pouvez consulter [la documentation dédiée aux opérateurs](https://rxjs.dev/guide/operators#categories-of-operators) pour avoir une idée du nombre d'opérateurs existants. Voici quelques exemples proches de concepts que vous connaissez déjà :
 
 ### [L'opérateur **`map`**](https://rxjs.dev/api/operators/map)
 
-L'opérateur RxjS **`map`** (à ne pas confondre avec la méthde map des tableaux) prend en paramètre un observable de type **`Observable<T>`** et renvoie un observable de type **`Observable<U>`**. Il permet de transformer les valeurs émises par l'observable en d'autres valeurs. Il est possible de lui passer une fonction de transformation **`T -> U`**.
+L'opérateur RxJS **`map`** (à ne pas confondre avec la méthode `map` des tableaux) prend en paramètre un observable de type **`Observable<T>`** et renvoie un observable de type **`Observable<U>`**. Il permet de transformer les valeurs émises par l'observable en d'autres valeurs. Il est possible de lui passer une fonction de transformation **`T -> U`**.
 
 ```typescript
     // Exemple avec l'observable interval qui produit un entier toutes les N ms (N passé en paramètre, ici 1000).
@@ -76,7 +76,7 @@ L'opérateur RxJS **`scan`** prend en paramètre un observable de type **`Observ
 
 ### Chainer les opérateurs
 
-Notez qu'il est bien sur possible de chainer ces opérateurs, par exemple, pour produire un observable qui émettra une string listant les la somme des carrés des entiers pairs à partir d'un observable interval à chaque nouvel entier pair.
+Notez qu'il est bien sur possible de chainer ces opérateurs, par exemple, pour produire un observable qui émettra une string listant la somme des carrés des entiers pairs à partir d'un observable interval à chaque nouvel entier pair.
 
 ```typescript
 const source : Observable<number> = interval(1000);
@@ -92,11 +92,11 @@ Il existe de nombreux autres [opérateurs](https://rxjs.dev/api/operators), nous
 
 ## Un parallèle entre observable et fonctions
 
-Un dernier point avant de passer à la pratique. Dans cette page nous n'avons fait que **définir** des observables, nous ne les avons pas **appelé/utilisé**.
+Un dernier point avant de passer à la pratique. Dans cette page nous n'avons fait que **définir** des observables, nous ne les avons pas **appelés/utilisés**.
 
-Les observables peuvent être vu comme[ une généralisation des fonctions](https://rxjs.dev/guide/observable#observables-as-generalizations-of-functions), une fonction vous renvoie une valeur, un observable vous renvoie un flux de valeurs. Vous pouvez effectivement faire le parallèle entre les deux :
+Les observables peuvent être vus comme [une généralisation des fonctions](https://rxjs.dev/guide/observable#observables-as-generalizations-of-functions), une fonction vous renvoie une valeur, un observable vous renvoie un flux de valeurs. Vous pouvez effectivement faire le parallèle entre les deux :
 
-* On peut définir une fonction sans l'appeler, on peut définir un observable sans s'y abonner.
-* Si on appelle pas la fonction, le code qu'elle contient n'est pas exécuté. De même, si on ne s'abonne pas à l'observable, le code qu'il contient n'est pas exécuté.
-* On appelle une fonction avec l'opérateur **`()`**, on *"appelle"* un observable en s'y abonnant.
-* Une fonction peut être synchrones ou asynchrone, un observable peut être synchrone ou asynchrone. On parle d'observable synchrone lorsque les valeurs sont produites immédiatement et  et d'observable asynchrone lorsque les valeurs sont produites au cours du temps (par exemple, à interval régulier, ou en réaction à un événement).
+- On peut définir une fonction sans l'appeler, on peut définir un observable sans s'y abonner.
+- Si on n'appelle pas la fonction, le code qu'elle contient n'est pas exécuté. De même, si on ne s'abonne pas à l'observable, le code qu'il contient n'est pas exécuté.
+- On appelle une fonction avec l'opérateur **`()`**, on *"appelle"* un observable en s'y abonnant.
+- Une fonction peut être synchrone ou asynchrone, un observable peut être synchrone ou asynchrone. On parle d'observable synchrone lorsque les valeurs sont produites immédiatement et d'observable asynchrone lorsque les valeurs sont produites au cours du temps (par exemple, à intervalle régulier, ou en réaction à un événement).

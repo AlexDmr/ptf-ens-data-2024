@@ -1,4 +1,4 @@
-s# Flux synchrones et asynchrones
+# Flux synchrones et asynchrones
 
 Nous parlerons ici de ***flux asynchrone***. Un flux asynchrone est un flux qui n'est pas synchrone (merci à [M. de la Palisse](https://fr.wikipedia.org/wiki/Lapalissade)). Il convient donc dans un premier temps de rappeler ce qu'est un flux synchrone.
 
